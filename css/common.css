@@ -1,0 +1,114 @@
+body{
+	font: normal 18px/1.2 '굴림', gulim, '맑은 고딕', Arial, sans-serif;
+}
+.row{
+	width: 100%;
+	text-align: center;
+}
+.gutter{
+	margin: 0 auto;
+}
+@media(min-width: 320px){
+	.gutter{
+
+	}
+}
+@media(min-width: 640px){
+	.gutter{
+
+	}
+}
+@media(min-width: 998px){
+	.gutter{
+
+	}
+}
+@media(min-width: 1600px){
+	.gutter{
+		width: 1600px;
+	}
+}
+.head{
+	border-top: 1px solid #dbdbdb;
+}
+.head-top{
+	overflow: hidden;
+	padding: 24px 0;
+}
+h1{
+	float: left;
+	width:146px;height:63px;
+	background: url(../img/main/ir_icon.png) no-repeat;
+	background-position:0 -80px;
+	text-indent: -9999px;
+}
+.select-lang{
+	float: right;
+	width: 66px;
+	overflow: hidden;
+}
+.select-lang a{
+	float: left;
+	display: block;
+	margin-right: 8px;width:24px;height:19px;
+	background: url(../img/main/ir_icon.png) no-repeat;
+	background-position:-90px 0;
+	text-indent: -8888px;
+}
+.select-lang a.lang-en{
+	margin-right: 0;
+	background-position:-120px 0
+}
+.menu-box{
+	float: right;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.gnb,
+.foot-menus{
+	position: relative;
+	width: 100%;overflow: hidden;
+	/*padding: 32px 0 52px 0;*/
+}
+.dep1{
+	display: block;
+	text-align: center;
+	font-family: 'wHYGothic_A1_200';font-size: 22px;color: #3f3f3f;
+}
+.dep1-row{
+	float: left;
+	width: 182px;
+	text-align: center;
+}
+.dep1-row:after{
+	content: '';
+	position: absolute;
+	/*top: 32px;bottom: 52px;*/
+	top: 0px;bottom: 0px;
+	margin-left: 91px;
+	z-index: -1;
+	border-left: 1px solid #939393;
+}
+.foot-menus .dep1-row:after{
+	border: none;
+}
+.dep2-group{
+	clear: both;
+	padding: 30px 0 52px;
+}
+
+.dep2{
+	display: block;
+	padding: 5px 0px;
+	text-align: center;
+	font-family: 'wHYGothic_A1_300';font-size: 18px;color: #fff;
+}
+
+.body{
+	clear: both;
+}
+
+.foot-top{
+	height: 90px;line-height: 90px;
+	background: #d4d4d4;
+}
