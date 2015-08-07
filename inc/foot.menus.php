@@ -1,11 +1,11 @@
 						<ul class='foot-menus'>
 							<li class='m1 dep1-row'>
-								<a href='company/about.php' class='dep1'  title='Adas One'>COMPANY</a>
+								<a href='about/about.php' class='dep1'  title='Adas One'>COMPANY</a>
 								<ul class='dep2-group'>
-									<li><a href='company/intro.php' class='dep2'>회사소개</a></li>
-									<li><a href='company/about.php' class='dep2'>ADAS ONE</a></li>
-									<li><a href='company/tech.php' class='dep2'>주요 기술</a></li>
-									<li><a href='company/contact.php' class='dep2'>찾아 오시는 길</a></li>
+									<li><a href='about/intro.php' class='dep2'>회사소개</a></li>
+									<li><a href='about/about.php' class='dep2'>ADAS ONE</a></li>
+									<li><a href='about/tech.php' class='dep2'>주요 기술</a></li>
+									<li><a href='about/contact.php' class='dep2'>찾아 오시는 길</a></li>
 								</ul>
 							</li>
 							<li class='m2 dep1-row'>
