@@ -5,13 +5,13 @@ $(document).ready(function()
 	if(isTest)
 	{
 		var $menuBg = $('#menu_bg').addClass('active');
-		var $dep2Group = $('.dep2-group').removeClass('sr-only');
+		var $dep2Group = $gnb.find('.dep2-group').removeClass('sr-only');
 		return;
 	}
 	else
 	{
 		var $menuBg = $('#menu_bg')
-		var $dep2Group = $('.dep2-group')
+		var $dep2Group = $gnb.find('.dep2-group');
 	}
 
 	$gnb.on('mouseenter', function()
