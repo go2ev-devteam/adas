@@ -1,13 +1,13 @@
 <?php
 $page_title = 'ADASONE 메인';
-include('inc/init.php');
-include('inc/doc.head.php');
+include('./init.php');
+include($GP -> INC.'doc.head.php');
 ?>
 <body>
 	<div class='root'>
 		<?php 
-		include('inc/accessibility.php');
-		include('inc/head.php');
+		include($GP -> INC.'accessibility.php');
+		include($GP -> INC.'head.php');
 		?>
 		<!--↑↑ Header ↑↑-->
 		<!--↓↓ Body & Content ↓↓-->
@@ -166,7 +166,7 @@ include('inc/doc.head.php');
 		</div>
 		<!--↑↑ Body & Content ↑↑-->
 		<!--↓↓ Foot ↓↓-->
-		<?php include('inc/foot.php'); ?>
+		<?php include($GP -> INC.'foot.php'); ?>
 		<!--↑↑ Foot ↑↑-->
 	</div>
 </body>

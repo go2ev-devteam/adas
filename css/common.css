@@ -2,6 +2,7 @@ body{
 	font: normal 18px/1.2 '굴림', gulim, '맑은 고딕', Arial, sans-serif;
 }
 .row{
+	clear: both;
 	width: 100%;
 	text-align: center;
 }
@@ -133,7 +134,19 @@ a.dep2:hover{
 .body{
 	clear: both;
 }
-
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.bread-crumb{
+	overflow: hidden;
+}
+.bread-crumb li{
+	float: left;
+}
+.bread-crumb li a{
+	display: block;
+}
 /*------------    Foot    ------------*/
 .foot-top{
 	height: 90px;line-height: 90px;
