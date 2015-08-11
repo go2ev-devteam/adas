@@ -11,7 +11,11 @@ $(document).ready(function()
 	})
 	.on('mouseleave', function()
 	{
-		console.log('on')
-	})
+		console.log('on111');
+	});
 
+	$body.on('mouseenter', function()
+	{
+		console.log('on Body');
+	})
 });
