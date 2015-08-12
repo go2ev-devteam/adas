@@ -12,7 +12,8 @@
 
 <script src='<?php echo $GP -> WEBROOT;?>js/jquery-1.9.1.min.js'></script>
 <script src='<?php echo $GP -> WEBROOT;?>js/admin.common.js' type="text/javascript"></script>
-<!--[if lt IE 7]>
+<script src='<?php echo $GP -> WEBROOT;?>board/nse/js/HuskyEZCreator.js' type="text/javascript"></script>
+<!--[if IE 7]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 <![endif]-->
 <title><?php echo $page_title; ?></title>
