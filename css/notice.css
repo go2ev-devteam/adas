@@ -1,0 +1,9 @@
+.notice-top-row{
+	overflow: hidden;
+}
+.notice-top-row img{
+	float: left;
+}
+.table-row{
+	clear: both;
+}

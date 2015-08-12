@@ -1,104 +1,172 @@
-<!DOCTYPE html>
-<html lang='ko'>
-<head>
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='Author' content='한양정보통신'>
-<meta name='Description' content='Adas One'>
-<meta name='Keywords' content='블랙박스, AdasOne, 한양정보통신'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<link rel='stylesheet' href='css/basic.css'>
-<link rel='stylesheet' href='css/a1-wfonts.css'>
-<link rel='stylesheet' href='css/common.css'>
-<link rel='stylesheet' href='css/main.css'>
-
-<script src='js/jquery-1.9.1-min.js'></script>
-<script src='js/respond.min.js'></script>
-<script id="TypeEngine" type='text/javascript' src="js/hy-1.1.js?client_c=4937128194"></script>
-<title>ADAS ONE 메인</title>
-</head>
+<?php
+$page_title = 'ADASONE 메인';
+include('./init.php');
+include($GP -> INC.'doc.head.php');
+?>
 <body>
 	<div class='root'>
-		<div id='accessibility'>
-			<dl>
-				<dt>바로가기 메뉴</dt>
-				<dd>브라우저에 따라 Alt+accessKey번호, 또는
-				Alt + Shift + accessKey번호, 또는
-				Shift + Esc + accessKey번호 선택 및 Enter(Return) 키를 입력하시면 해당부분으로 이동합니다.</dd>
-				<dd>
-					<a href='#menu_box' accesskey='1'>메인메뉴 바로가기</a>
-					<a href='#contents' accesskey='2'>본문 바로가기</a>
-					<a href='#foot' accesskey='3'>푸터바로가기</a>
-				</dd>
-			</dl>
-		</div>
-		<div class='head'>
-			<div class='row head-top'>
-				<div class='gutter'>
-					<h1><a href='\'>ADAS ONE</a></h1>
-					<ul class='select-lang'>
-						<li><a href='index.php'>언어 선택 - 한국어 </a></li>
-						<li><a href='index.en.php' class='lang-en'>Select Language - English </a></li>
-					</ul>
-					<div class='menu-box' id='menu_box'>
-						<div class='menu-bg' id='menu-bg'></div>
-						<?php include('inc/menus.php');?>
-					</div>
-				</div>
-			</div>
-			<div class='row slider'>
-				<div class='gutter'>
-					<div class='slide-addit'>
-						<div class='ctrl-box'>
-							<button type='button' class='btn slide-ctrl-prev'>이전 슬라이드</button>
-							<button type='button' class='btn slide-ctrl-play'>슬라이드 재생</button>
-							<button type='button' class='btn slide-ctrl-next'>다음 슬라이드</button>
-						</div>
-						<div class='text-box'>
-							<dl>
-								<dt>WEB SITE RENEWAL</dt>
-								<dd><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다. <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
-								<a href='#' class='go-link'>Go</a>
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<ul>
-						<li>
-							<img src='img/main/bg_top_fs8.png' alt='Web Site Renewal'>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<?php 
+		include($GP -> INC.'accessibility.php');
+		include($GP -> INC.'head.php');
+		?>
 		<!--↑↑ Header ↑↑-->
 		<!--↓↓ Body & Content ↓↓-->
 		<div class='body main' id='body'>
 			<div class='gutter'>
 				<div class='contents' id='contents'>
-				</div>
-			</div>
-		</div>
-		<!--↑↑ Body & Content ↑↑-->
-
-		<div class='foot' id='foot'>
-			<div class='foot-top'>
-				<div class='gutter'>
-
-				</div>
-			</div>
-			<div class='foot-body'>
-				<div class='gutter'>
-					<div class='menu-box'>
-						<?php include('inc/foot.menus.php'); ?>
+					<div class='row slider'>
+						<div class='slide-addit'>
+							<div class='ctrl-box'>
+								<button type='button' class='btn slide-ctrl-prev'>이전 슬라이드</button>
+								<button type='button' class='btn slide-ctrl-play'>슬라이드 재생</button>
+								<button type='button' class='btn slide-ctrl-next'>다음 슬라이드</button>
+							</div>
+							<div class='text-box'>
+								<dl>
+									<dt>WEB SITE RENEWAL</dt>
+									<dd><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다. <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
+									<a href='#' class='go-link'>Go</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<ul>
+							<li class='slide-row'>
+								<img src='img/main/bg_top_fs8.png' alt='Web Site Renewal'>
+							</li>
+						</ul>
+					</div>
+					<div class='contents-row feat'>
+						<dl class='feat-01'>
+							<dt>Embedded Vision Technology</dt>
+							<dd>Our company works on Embedded Vision. Basically, Embedded and Computer systems working together is referred to as embedded vision. These systems are detveloped for Consumer Electronics, Medical equipments, Automobile etc.
+							</dd>
+						</dl>
+						<dl class='feat-02'>
+							<dt>IoT Technology</dt>
+							<dd>Another technology is IoT which is based on closely associated machine-to-machine (M2M) communication products in manufacturing and power, oil and gas utilities.</dd>
+						</dl>
+						<dl class='feat-03'>
+							<dt>Car DVR Technology</dt>
+							<dd>Hanyang offers a Car DVR, a portable Car Digital Video Recorder with wide angle lens that captures high definition video and displays them on LCD. It automatically records and saves </dd>
+						</dl>
+					</div>
+					<!--↓↓ Focus & NEWS, Download Content-row ↓↓-->
+					<div class='conts-row'>
+						<div class='focus-box conts-col-1'>
+							<div class='focus-box-in'>
+								<h4>Focus</h4>
+								<ul>
+									<li><a href='focus_01' class='current'>■</a></li>
+									<li><a href='focus_02'>■</a></li>
+									<li><a href='focus_03'>■</a></li>
+								</ul>
+								<h5 id='focus_01' class='current'>CES 2015 innovation awards_1</h5>
+								<span class='focus-item current'>
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+								</span>
+								<h5 id='focus_02' class='sr-only'>CES 2015 innovation awards_2</h5>
+								<span class='focus-item sr-only'>
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+								</span>
+								<h5 id='focus_03' class='sr-only'>CES 2015 innovation awards_3</h5>
+								<span class='focus-item sr-only'>
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+								</span>
+							</div>
+						</div>
+						<div class='conts-col-2'>
+							<div class='biz-box'>
+								<div class='box-in'>
+									<h5>Business</h5>
+									<span>한양정보통신의 신기술에 대해 궁금하신 점을 문의해주세요</span>
+									<span class='email'><a href='mailto:adasone@hanyang.co.kr'>adasone@hanyang.co.kr</a></span>
+									<span class='tel'>+82-2-2279-1400</span>
+								</div>
+							</div>
+							<div class='download-box'>
+								<div class='box-in'>
+									<h5>Download<br /><span>Center</span></h5>
+									<span>메뉴얼/App/PC Viewer <br />펌웨어 <strong>다운로드 센터</strong></span>
+									<a href='download/download.php'>다운로드 페이지 바로가기</a>
+								</div>
+							</div>
+							<div class='notice-box'>
+								<div class='box-in'>
+									<h5 class='current'>NEWS</h5>
+									<div>
+										<ul>
+											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+										</ul>
+										<a href='news/news.php' class='link-more'>뉴스 더보기</a>
+									</div>
+									<h5>EVENT</h5>
+									<div class='sr-only'>
+										<ul>
+											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+										</ul>
+										<a href='news/news.php' class='link-more'>Event 더보기</a>
+									</div>
+									<h5>FAQ</h5>
+									<div class='sr-only'>
+										<ul>
+											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+										</ul>
+										<a href='news/news.php' class='link-more'>FAQ 더보기</a>
+									</div>
+									<h5>Q&amp;A</h5>
+									<div class='sr-only'>
+										<ul>
+											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+										</ul>
+										<a href='news/news.php' class='link-more'>Q&amp;A 더보기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--↑↑ Focus & News, Business Content-row ↑↑-->
+					<!--↓↓ Locations, C/s Center Copyright ↓↓-->
+					<div class='conts-row location'>
+						<div class='conts-in'>
+							<dl>
+								<dt>LOCATIONS</dt>
+								<dd>137-842<br />3F,114, Bangbae-ro, Seocho-gu, <br />Seoul, Korea</dd>
+							</dl>
+							<dl>
+								<dt>C/S CENTER</dt>
+								<dd>+82-2-2279-1400<br />adasone@hanyang.co.kr</dd>
+							</dl>
+							<dl>
+								<dt>COPYRIGHT</dt>
+								<dd>Copyright 2015 by <br />Hanyang information &amp; communication.<br />All Rights Reserved</dd>
+							</dl>
+						</div>
+					</div>
+					<!--↑↑ Locations, C/s Center Copyright ↑↑-->
+					<div class='conts-row google-map'>
+						<img src='img/main/map-fs8.png'>
 					</div>
 				</div>
+				<!--↑↑ Contents ↑↑-->
 			</div>
-			<div class='foot-tail'>
-				<div class='gutter'>
-				</div>
-			</div>
+			<!--↑↑ Gutter ↑↑-->
 		</div>
+		<!--↑↑ Body & Content ↑↑-->
+		<!--↓↓ Foot ↓↓-->
+		<?php include($GP -> INC.'foot.php'); ?>
 		<!--↑↑ Foot ↑↑-->
 	</div>
 </body>
