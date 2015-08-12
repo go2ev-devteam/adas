@@ -132,3 +132,7 @@ pre code {
   top: 0;left: 0;bottom: 0;
   width: 100%;background: #474747;z-index: -1;
 }
+
+.tal{text-align: left !important;}
+.tac{text-align: center !important;}
+.tar{text-align: right !important;}
