@@ -5,8 +5,8 @@
 							<a href='event.php' class='dep1'>일반 게시판</a>
 							<ul class='dep2-group sr-only'>
 								<li><a href='event.php' class='dep2'>이벤트</a></li>
-								<li><a href='board.php?cate=notice' class='dep2'>공지사항</a></li>
-								<li><a href='board.php?cate=faq' class='dep2'>FAQ</a></li>
+								<li><a href='board/board.php?cate=notice' class='dep2'>공지사항</a></li>
+								<li><a href='board/board.php?cate=faq' class='dep2'>FAQ</a></li>
 							</ul>
 						</li>
 						<li class='dep1-row'>
