@@ -6,6 +6,7 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PW', 'autoset');
 define('DB_NAME', 'adas');
+define('LIST_NUM_FOR_PAGE', 10);
 
 class GlobalPath{};
 $GP = new GlobalPath();

@@ -43,22 +43,51 @@ include_once($GP -> INC.'admindoc.head.php');
 								<?php
 								include_once($GP -> INC.'dbconn.php');
 
+								if(isset($_GET['page']) && !empty($_GET['page']))
+								{
+									$page = $_GET['page'];
+								}
+								else
+								{
+									$page = 1;
+								}
+
 								$qry = "SELECT * FROM $cate ORDER BY `idx` DESC";
 								$res = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
 								$str = '';
 								$row_tit = $cate.'_tit';
-								while($row = mysqli_fetch_assoc($res))
+
+								$cur_page = ($page - 1) * LIST_NUM_FOR_PAGE;
+								$len = $cur_page + LIST_NUM_FOR_PAGE;
+								for($i = $cur_page; $i < $len; ++$i)
 								{
-									$str.='<tr>';
-									$str.='<td><input type="checkbox" name="dels[]" value="'.$row['idx'].'"></td>';
-									$str.='<td>'.$row['idx'].'</td>';
-									$str.='<td class="item-tit tal"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'">'.$row[$cate.'_tit'].'</td>';
-									$str.='<td>관리자</td>';
-									$str.='<td>'.$row[$cate.'_date'].'</td>';
-									$str.='<td>'.$row['read_cnt'].'</td>';
-									$str.='</tr>';
+									if(mysqli_data_seek($res, $i))
+									{
+										$row = mysqli_fetch_assoc($res);
+
+										$str.='<tr>';
+										$str.='<td><input type="checkbox" name="dels[]" value="'.$row['idx'].'"></td>';
+										$str.='<td>'.$row['idx'].'</td>';
+										$str.='<td class="item-tit tal"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'">'.$row[$cate.'_tit'].'</td>';
+										$str.='<td>관리자</td>';
+										$str.='<td>'.$row[$cate.'_date'].'</td>';
+										$str.='<td>'.$row['read_cnt'].'</td>';
+										$str.='</tr>';
+									}
 								}
 								echo $str;
+								// while($row = mysqli_fetch_assoc($res))
+								// {
+								// 	$str.='<tr>';
+								// 	$str.='<td><input type="checkbox" name="dels[]" value="'.$row['idx'].'"></td>';
+								// 	$str.='<td>'.$row['idx'].'</td>';
+								// 	$str.='<td class="item-tit tal"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'">'.$row[$cate.'_tit'].'</td>';
+								// 	$str.='<td>관리자</td>';
+								// 	$str.='<td>'.$row[$cate.'_date'].'</td>';
+								// 	$str.='<td>'.$row['read_cnt'].'</td>';
+								// 	$str.='</tr>';
+								// }
+								// echo $str;
 								?>
 							</tbody>
 						</table>
@@ -66,23 +95,15 @@ include_once($GP -> INC.'admindoc.head.php');
 							<a href='' class='prev10 btn-icon' title='10개 이전 페이지로'>10페이지 전으로</a>
 							<a href='' class='prev btn-icon' title='이전 페이지로'>이전 페이지로</a>
 							<?php
-							if(mysqli_data_seek($res, 0))
+							$page_len = mysqli_num_rows($res) / LIST_NUM_FOR_PAGE;
+							for($i = mysqli_num_rows($res);$i > 0;--$i)
 							{
-								while($row = mysqli_fetch_assoc($res))
+								if(mysqli_data_seek($res, $i))
 								{
-									echo '<a href="board.php?page_num='.$row['idx'].'">'.$row['idx'].'</a>';
+									$row = mysqli_fetch_assoc($res);
+									echo '<a href="board.php?cate='.$cate.'&page='.$row['idx'].'">'.$row['idx'].'</a>';
 								}
-								
 							}
-							// <a href='' class='current'>1</a>
-							// <a href=''>2</a>
-							// <a href=''>3</a>
-							// <a href=''>4</a>
-							// <a href=''>5</a>
-							// <a href=''>6</a>
-							// <a href=''>7</a>
-							// <a href=''>8</a>
-							// <a href=''>9</a>
 							?>
 							<a href='' class='next btn-icon' title='다음 목록 페이지로'>다음 페이지로</a>
 							<a href='' class='next10 btn-icon' title='10개 다음 페이지로'>다음 10페이지</a>
