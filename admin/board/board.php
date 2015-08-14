@@ -58,8 +58,8 @@ include_once($GP -> INC.'admindoc.head.php');
 								$row_tit = $cate.'_tit';
 
 								$cur_page = ($page - 1) * LIST_NUM_FOR_PAGE;
-								$len = $cur_page + LIST_NUM_FOR_PAGE;
-								for($i = $cur_page; $i < $len; ++$i)
+								$cur_page_end = $cur_page + LIST_NUM_FOR_PAGE;
+								for($i = $cur_page; $i < $cur_page_end; ++$i) 
 								{
 									if(mysqli_data_seek($res, $i))
 									{
@@ -76,18 +76,6 @@ include_once($GP -> INC.'admindoc.head.php');
 									}
 								}
 								echo $str;
-								// while($row = mysqli_fetch_assoc($res))
-								// {
-								// 	$str.='<tr>';
-								// 	$str.='<td><input type="checkbox" name="dels[]" value="'.$row['idx'].'"></td>';
-								// 	$str.='<td>'.$row['idx'].'</td>';
-								// 	$str.='<td class="item-tit tal"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'">'.$row[$cate.'_tit'].'</td>';
-								// 	$str.='<td>관리자</td>';
-								// 	$str.='<td>'.$row[$cate.'_date'].'</td>';
-								// 	$str.='<td>'.$row['read_cnt'].'</td>';
-								// 	$str.='</tr>';
-								// }
-								// echo $str;
 								?>
 							</tbody>
 						</table>
@@ -95,14 +83,16 @@ include_once($GP -> INC.'admindoc.head.php');
 							<a href='' class='prev10 btn-icon' title='10개 이전 페이지로'>10페이지 전으로</a>
 							<a href='' class='prev btn-icon' title='이전 페이지로'>이전 페이지로</a>
 							<?php
-							$page_len = mysqli_num_rows($res) / LIST_NUM_FOR_PAGE;
-							for($i = mysqli_num_rows($res);$i > 0;--$i)
+							$row_len = 0;
+							if(mysqli_num_rows($res) > 0)
 							{
-								if(mysqli_data_seek($res, $i))
-								{
-									$row = mysqli_fetch_assoc($res);
-									echo '<a href="board.php?cate='.$cate.'&page='.$row['idx'].'">'.$row['idx'].'</a>';
-								}
+								$row_len = mysqli_num_rows($res);
+							}
+							// $page_len = 5;
+							$page_len = round($row_len / LIST_NUM_FOR_PAGE);
+							for($i = 1;$i <= $page_len;++$i)
+							{
+								echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$i.'" class="'.(($page!=$i)? '':'current').'">'.$i.'</a>';
 							}
 							?>
 							<a href='' class='next btn-icon' title='다음 목록 페이지로'>다음 페이지로</a>
