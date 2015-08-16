@@ -1,0 +1,198 @@
+body{
+	font: normal 18px/1.2 '굴림', gulim, '맑은 고딕', Arial, sans-serif;
+}
+.row{
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.gutter{
+	margin: 0 auto;
+}
+
+/*------------    Head    ------------*/
+.head{
+	border-top: 1px solid #dbdbdb;
+}
+.head-top{
+	position: relative;z-index: 10;
+	height: 64px;
+	padding: 24px 0;
+}
+.head-top .gutter{
+	position: relative;
+}
+h1{
+	float: left;
+	margin-left: 52px;
+	width:146px;height:63px;
+	background: url(../img/main/ir_icon.png) no-repeat;
+	background-position:0 -80px;
+	text-indent: -9999px;
+}
+.select-lang{
+	float: right;
+	width: 56px;
+	overflow: hidden;
+}
+.select-lang a{
+	float: left;
+	display: block;
+	margin-right: 8px;width:24px;height:19px;
+	background: url(../img/main/ir_icon.png) no-repeat;
+	background-position:-90px 0;
+	text-indent: -8888px;
+}
+.select-lang a.lang-en{
+	margin-right: 0;
+	background-position:-120px 0
+}
+.head .menu-box{
+	position: absolute;left: 0;top: 30px;
+	width: 100%;overflow: hidden;
+}
+.gnb{
+	float: right;
+	overflow: hidden;
+}
+.menu-bg.active:after{
+	content: '';
+	position: absolute;
+	top: 60px;left: 0;bottom: 0;z-index: -1;
+	width: 100%;
+	background: #787776;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-khtml-opacity: 0.9;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}
+.dep1{
+	display: block;
+	padding: 10px 10px 24px;
+	text-align: center;
+	font-family: 'wHYGothic_A1_200';font-size: 22px;color: #3f3f3f;
+}
+.dep1-row{
+	float: left;
+	width: 182px;
+	text-align: center;
+}
+.dep2-group{
+	clear: both;
+	padding: 20px 0 52px;
+}
+.head .dep2-group:after{
+	content: "";
+	position: absolute;
+	top: 80px;bottom: 20px;
+	z-index: -1;
+	width: 181px;display: block;
+	border-left: 1px solid #908e8d;
+}
+.head .dep1-row:first-child .dep2-group:after{
+	border-left: 0 none;
+}
+a.dep2{
+	display: block;
+	padding: 8px 0px;
+	text-align: center;
+	font-family: 'wHYGothic_A1_300';font-size: 18px;color: #fff;
+}
+a.dep2:hover{
+	text-decoration: underline;
+}
+
+@media(min-width: 320px){
+	.gutter{
+
+	}
+}
+@media(min-width: 640px){
+	.gutter{
+
+	}
+}
+@media(min-width: 998px){
+	.gutter{
+
+	}
+
+}
+@media(min-width: 1280px){
+	.gutter{
+
+	}
+}
+@media(min-width: 1600px){
+	.gutter{
+		width: 1600px;
+	}
+}
+
+/*------------    Body    ------------*/
+.body{
+	clear: both;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.bread-crumb{
+	overflow: hidden;
+}
+.bread-crumb li{
+	float: left;
+}
+.bread-crumb li a{
+	display: block;
+}
+/*------------    Foot    ------------*/
+.foot-top{
+	height: 90px;line-height: 90px;
+	background: #d4d4d4;
+}
+.foot-body{
+	padding: 66px 0 112px;
+	background: #606060;
+}
+.foot-tail{
+	padding: 26px 0 62px;
+	background: #fff;
+}
+
+.foot .menu-box{
+	overflow: hidden;
+}
+.foot-menus{
+	overflow: hidden;
+}
+.foot .dep1-row{
+		min-height: 300px;
+}
+.foot .dep1{
+	color: #fff;
+}
+.foot-tail{
+	text-align: center;
+	color: #454545;
+}
+.copyright{
+	font-size: 14px;font-family: 'wHYGothic_A1_150';color: #454545
+}
+@media(min-width: 998px){
+	.foot .gutter{
+		width: 960px;
+	}
+
+}
+@media(min-width: 1280px){
+	.foot .gutter{
+		width: 1092px;
+	}
+}
+@media(min-width: 1600px){
+	.foot .gutter{
+		width: 1092px;
+	}
+}
