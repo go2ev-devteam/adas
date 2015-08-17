@@ -1,6 +1,6 @@
 <?php
 $page_title = '상세 보기';
-include_once('../init.php');
+include_once('../_init.php');
 include_once($GP -> INC.'admindoc.head.php');
 ?>
 <body>
@@ -9,15 +9,14 @@ include_once($GP -> INC.'admindoc.head.php');
 			<div class='cols'>
 				<?php include_once($GP -> INC.'gnb.php');
 
-				if(isset($_GET['cate']) && !empty($_GET['cate']))
+				foreach ($_GET as $key => $value) 
 				{
-					$cate = trim($_GET['cate']);
+					if(isset($_GET[$key]) && !empty($_GET[$key]))
+					{
+						$$key = $value;
+					}
 				}
 
-				if(isset($_GET['idx']) && !empty($_GET['idx']))
-				{
-					$idx = trim($_GET['idx']);
-				}
 				include_once($GP -> INC.'dbconn.php');
 				$qry = "SELECT * FROM $cate WHERE `idx`='$idx'";
 				$result = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
@@ -29,11 +28,29 @@ include_once($GP -> INC.'admindoc.head.php');
 					$date = $row[$cate.'_date'];
 				}
 				?>
-				<div class='col-2' id='body'>
-					<div class='content-head'>
-						<h2><?php echo strtoupper($cate);?> 게시판</h2>
-						<p>해당 관리자 페이지의 메인 관리자는 <span>adasone@hanyang.co.kr</span>입니다</p>
+				<div class='col-2 view' id='body'>
+					<?php include_once($GP -> INC.'content.head.php'); ?>
+					<div class='content-row-group'>
+						<div class='content-row'>
+							<h3><?php echo $tit; ?></h3>
+							<div class='date-box'>
+								<span>등록일 <?php echo $date;?></span>
+							</div>
+						</div>
+						<div class='content-row'>
+							<div>
+								<?php
+								echo $content;
+								?>
+							</div>
+						</div>
 					</div>
+					<div class='content-foot'>
+						<a href='<?php echo "remove.php?idx=$idx&cate=$cate&page=$page";?>' class='btn btn-remove'>삭 제</a>
+						<a href='<?php echo "edit.php?idx=$idx&cate=$cate&page=$page";?>' class='btn btn-edit'>수정하기</a>
+						<a href='<?php echo "board.php?cate=$cate&page=$page";?>' class='btn btn-go-list'>목록으로</a>
+					</div>
+
 				</div>
 			</div>
 		</div>
