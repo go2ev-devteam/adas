@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', true);
 
 $_DIR_ROOT = str_replace('\\', '/', dirname(__FILE__));
 $_WEB_ROOT = dirname($_SERVER['PHP_SELF']);

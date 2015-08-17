@@ -1,7 +1,7 @@
 body{
 	font: normal 18px/1.2 '굴림', gulim, '맑은 고딕', Arial, sans-serif;
 }
-.row{
+.content-row{
 	clear: both;
 	width: 100%;
 	text-align: center;
@@ -133,6 +133,8 @@ a.dep2:hover{
 /*------------    Body    ------------*/
 .body{
 	clear: both;
+	padding-bottom: 60px;
+	overflow: hidden;
 }
 table{
 	width: 100%;
@@ -147,13 +149,48 @@ table{
 .bread-crumb li a{
 	display: block;
 }
-/*------------    Foot    ------------*/
-.foot-top{
-	height: 90px;line-height: 90px;
-	background: #d4d4d4;
+@media(min-width: 320px){
+	.gutter{
+
+	}
 }
+@media(min-width: 640px){
+	.gutter{
+
+	}
+}
+@media(min-width: 998px){
+	.gutter{
+
+	}
+
+}
+@media(min-width: 1024px){
+	.gutter{
+		width: 1000px;
+	}
+}
+
+/*------------    Foot    ------------*/
+.foot{
+	clear: both;
+}
+.foot-top{
+	height: 66px;line-height: 80px;
+	background: #d4d4d4;text-align: center;
+}
+.foot-top .gutter{
+	
+	color: #363636;
+	font-size:24px;font-family: "wHYGothic_A1_850";
+}
+.foot-top .gutter strong:first-child + strong{
+	color:#ec583a;font-size:24px;font-family: "wHYGothic_A1_550";
+}
+
 .foot-body{
 	padding: 66px 0 112px;
+	overflow: hidden;
 	background: #606060;
 }
 .foot-tail{
@@ -162,16 +199,25 @@ table{
 }
 
 .foot .menu-box{
+	width: 478px;float: left;
 	overflow: hidden;
 }
-.foot-menus{
+.foot .location{
+	float: right;
+}
+.foot .menu-box ul{
+	float: left;
 	overflow: hidden;
 }
 .foot .dep1-row{
-		min-height: 300px;
+	float: none;
 }
 .foot .dep1{
 	color: #fff;
+	text-align: left;
+}
+.foot .dep2{
+	text-align: left;
 }
 .foot-tail{
 	text-align: center;
@@ -186,13 +232,8 @@ table{
 	}
 
 }
-@media(min-width: 1280px){
+@media(min-width: 1024px){
 	.foot .gutter{
-		width: 1092px;
-	}
-}
-@media(min-width: 1600px){
-	.foot .gutter{
-		width: 1092px;
+		width: 1000px;
 	}
 }

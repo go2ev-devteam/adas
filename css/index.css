@@ -1,7 +1,6 @@
 .slider{
 	position: relative;z-index: 1;
 	background: #616161;
-	border-bottom: 8px solid #d5d5d5;
 }
 .slider .gutter{
 	position: relative;
@@ -64,32 +63,43 @@
 .main .gutter{
 	text-align: left;
 }
-.conts-row{
-	clear: both;
+.content-head ul li{
+	height: 570px;
+	background: url(../img/main/bg_top-fs8.png) no-repeat center center;
 }
 /*------------    feature    ------------*/
+.arr-down{
+	display: block;
+	margin: -78px auto 0;
+	background: url(../img/main/ir_icon.png) no-repeat -150px -110px;
+	width:27px;height:19px;
+}
 .feat{
-	padding: 106px 0 48px;
+	padding: 115px 0 48px;
 	overflow: hidden;
 }
 .feat dl{
 	float: left;
 	width: 33%;
-	min-width: 274px;
-	padding-top: 316px
+	min-width: 240px;
+	padding-top: 250px
 }
-.feat dl dt,
-.feat dl dd{
-	padding: 0 60px;
-	text-align: center;
+.feat dt,
+.feat dd{
+	padding: 0 10px;
 	color: #5c5c5c;
 }
 .feat dt{
-	font-family: 'wHYGothic_A1_600';font-size: 22px;
+	height: 53px;margin: 0px auto;
+	font-family: 'wHYGothic_A1_600';font-size: 20px;
 }
 .feat dd{
-	margin-top: 30px;
-	font-family: 'wHYGothic_A1_300';font-size: 18px;
+	margin: 15px auto 0;
+	padding: 0 43px ;
+	font-family: 'wHYGothic_A1_300';font-size: 14px;
+}
+.feat-01 dt{
+	padding: 0px 30px;
 }
 .feat-01{
 	background: url(../img/main/feat_01-fs8.png) no-repeat center top;
@@ -104,16 +114,17 @@
 /*------------    focus    ------------*/
 .focus-box{
 	float: left;position: relative;
-	width: 50%;overflow: hidden;height: 358px;
+	width: 50%;overflow: hidden;height: 270px;
 	background: #efefef;
 }
 .focus-box-in{
-	padding: 40px 60px 0;
+	padding: 28px 40px 0;
+	text-align: left;
 }
 .focus-box h4{
 	float: left;
-	border-bottom: 5px solid #ec583a;
-	font-family: 'wHYGothic_A1_600';font-size: 40px;color: #626262;font-weight: bold;
+	border-bottom: 2px solid #ec583a;
+	font-family: 'wHYGothic_A1_800';font-size: 22px;color: #626262;font-weight: bold;
 }
 
 .focus-box ul{
@@ -138,13 +149,13 @@
 	clear: both;
 }
 .focus-box h5{
-	margin-top: 105px;
-	font-family: 'wHYGothic_A1_800';font-size: 32px;color: #626262;
+	margin-top: 60px;
+	font-family: 'wHYGothic_A1_800';font-size: 18px;color: #626262;
 }
 .focus-item{
 	display: block;
 	margin-top: 20px;
-	font-family: 'wHYGothic_A1_400';font-size: 16px;color: #626262;line-height: 1.2;
+	font-family: 'wHYGothic_A1_300';font-size: 14px;color: #626262;
 }
 
 /*------------    Business    ------------*/
@@ -155,21 +166,22 @@
 .biz-box, 
 .download-box{
 	float: left;
-	width: 50%;height: 180px;
+	width: 50%;height: 112px;
 }
 .box-in{
-	padding: 26px 38px 0;
+	padding: 20px 24px 0;
+	text-align: left;
 }
 .biz-box{
 	background: #626262;
 }
 .biz-box h5{
 	margin-bottom: 5px;
-	font-family: 'wHYGothic_A1_700';font-size: 22px;color: #d3d3d3;font-weight: normal;
+	font-family: 'wHYGothic_A1_700';font-size: 18px;color: #d3d3d3;font-weight: normal;
 }
 .biz-box span{
 	display: inline-block;
-	font-family: 'wHYGothic_A1_400';font-size: 16px;font-weight: normal;
+	font-family: 'wHYGothic_A1_450';font-size: 14px;font-weight: normal;
 }
 .biz-box h5 + span{
 	color: #d3d3d3;
@@ -180,8 +192,8 @@
 	background: url(../img/main/ir_icon.png)no-repeat;
 }
 .email{
-	margin-top: 10px;height:20px;
-	background-position:0 -145px;
+	margin-top: 12px;height:20px;
+	background-position:0 -147px;
 }
 .email a{
 	display: block;
@@ -191,7 +203,7 @@
 }
 .tel{
 	margin-top: 5px;height:20px;
-	background-position:0px -168px;text-decoration: underline;
+	background-position:0px -170px;text-decoration: underline;
 	font-size: 16px;font-family: 'wHYGothic_A1_450';color: #fff;
 }
 .notice-box{
@@ -206,7 +218,7 @@
 }
 .download-box h5,
 .download-box h5 span{
-	font-size: 22px;font-weight: normal;
+	font-size: 18px;font-weight: normal;
 	color: #5c5c5c;
 }
 .download-box h5{
@@ -218,29 +230,29 @@
 }
 .download-box h5 + span{
 	display: block;
-	margin-top: 30px;
+	margin-top: 14px;
 	font-family: 'wHYGothic_A1_400';font-size: 16px;color: #5c5c5c;
 	line-height: 1.4;
 }
 .download-box a{
 	display: block;
-	position: absolute;top: 35px;right: 38px;
+	position: absolute;top: 22px;right: 25px;
 	background: url(../img/main/btn_download.png) no-repeat left top;
-	width: 119px;height: 119px;text-indent: -8888px;
+	width: 75px;height: 74px;text-indent: -8888px;
 }
 
 
 /*------------    News    ------------*/
 .notice-box{
 	position: relative;
-	height: 178px;
+	height: 158px;
 	background: #dcdcdc;
 }
 .notice-box h5{
 	float: left;
 	margin:0 18px;
 	cursor: pointer;
-	font-size: 18px;font-family: 'wHYGothic_A1_700';color: #3f3f3f;font-weight: normal;
+	font-size: 15px;font-family: 'wHYGothic_A1_700';color: #3f3f3f;font-weight: normal;
 }
 .notice-box h5:first-child{
 	margin-left: 0;
@@ -256,7 +268,7 @@
 }
 .notice-box h5 + div{
 	clear: both;
-	position: absolute;top: 68px;
+	position: absolute;top: 54px;
 	margin-left: -38px;width: 100%;
 }
 .notice-box ul li{
@@ -268,7 +280,7 @@
 	float: left;
 	display: block;
 	padding-left: 38px;
-	font-size: 14px;font-family: 'wHYGothic_A1_350';
+	font-size: 13px;font-family: 'wHYGothic_A1_350';
 }
 .notice-box ul a:hover{
 	text-decoration: underline;
@@ -278,13 +290,14 @@
 }
 .notice-box ul .date{
 	float: right;
-	margin-right: 60px;
-	font-size: 14px;font-family: 'wHYGothic_A1_350';color: #3f3f3f
+	margin-right: 14px;
+	font-size: 13px;font-family: 'wHYGothic_A1_350';color: #3f3f3f
 }
 .notice-box .link-more{
-	display: block;position: absolute;top: 20px;right: 10px;
-	width:14px;height:14px;background-position:0 -20px;
+	display: block;position: absolute;top: -34px;right: 14px;
+	width:14px;height:14px;
 	background: url(../img/main/ir_icon.png)no-repeat;
+	background-position:0 -20px;
 	text-indent: -9999px;
 }
 

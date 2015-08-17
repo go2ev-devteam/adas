@@ -1,6 +1,7 @@
 <div class='foot' id='foot'>
 			<div class='foot-top'>
 				<div class='gutter'>
+					믿고 맡길수 있는 <strong>첨단 프리미엄 안전운전</strong> 길라잡이 <strong>ADAS ONE</strong>
 				</div>
 			</div>
 			<div class='foot-body'>
@@ -23,6 +24,8 @@
 									<li><a href='prod/aeb.php' class='dep2'>AEB</a></li>
 								</ul>
 							</li>
+						</ul>
+						<ul>
 							<li class='m3 dep1-row'>
 								<a href='news/notice.php' class='dep1'>NEWS</a>
 								<ul class='dep2-group'>
@@ -39,6 +42,8 @@
 									<li><a href='download/viewer.php' class='dep2'>PC Viewer</a></li>
 								</ul>
 							</li>
+						</ul>
+						<ul>
 							<li class='m5 dep1-row'>
 								<a href='community/faq.php' class='dep1'>FAQ</a>
 								<ul class='dep2-group'>
@@ -53,6 +58,11 @@
 								</ul>
 							</li>
 						</ul>
+					</div>
+					<div class='location'>
+						<h4>LOCATIONS</h4>
+						<p>(우) 137-842<br />서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 3층<br />한양정보통신 임베디드연구소</p>
+						<img src='img/main/map.png' alt='서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 지도위치 이미지'>
 					</div>
 				</div>
 			</div>

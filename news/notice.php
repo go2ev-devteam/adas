@@ -1,6 +1,6 @@
 <?php
 $page_title = 'ADASONE 공지사항';
-include_once('../init.php');
+include_once('../_init.php');
 include_once($GP -> INC.'doc.head.php');
 ?>
 <body>

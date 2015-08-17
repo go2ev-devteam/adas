@@ -1,6 +1,6 @@
 <?php
 $page_title = 'ADASONE 메인';
-include('./init.php');
+include('./_init.php');
 include($GP -> INC.'doc.head.php');
 ?>
 <body>
@@ -12,31 +12,31 @@ include($GP -> INC.'doc.head.php');
 		<!--↑↑ Header ↑↑-->
 		<!--↓↓ Body & Content ↓↓-->
 		<div class='body main' id='body'>
-			<div class='gutter'>
-				<div class='contents' id='contents'>
-					<div class='row slider'>
-						<div class='slide-addit'>
-							<div class='ctrl-box'>
-								<button type='button' class='btn slide-ctrl-prev'>이전 슬라이드</button>
-								<button type='button' class='btn slide-ctrl-play'>슬라이드 재생</button>
-								<button type='button' class='btn slide-ctrl-next'>다음 슬라이드</button>
-							</div>
-							<div class='text-box'>
-								<dl>
-									<dt>WEB SITE RENEWAL</dt>
-									<dd><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다. <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
-									<a href='#' class='go-link'>Go</a>
-									</dd>
-								</dl>
-							</div>
+			<div class='contents' id='contents'>
+				<div class='content-head slider'>
+					<div class='slide-addit'>
+						<div class='ctrl-box'>
+							<button type='button' class='btn slide-ctrl-prev'>이전 슬라이드</button>
+							<button type='button' class='btn slide-ctrl-play'>슬라이드 재생</button>
+							<button type='button' class='btn slide-ctrl-next'>다음 슬라이드</button>
 						</div>
-						<ul>
-							<li class='slide-row'>
-								<img src='img/main/bg_top_fs8.png' alt='Web Site Renewal'>
-							</li>
-						</ul>
+						<div class='text-box'>
+							<dl>
+								<dt>WEB SITE RENEWAL</dt>
+								<dd><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다. <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
+								<a href='#' class='go-link'>Go</a>
+								</dd>
+							</dl>
+						</div>
 					</div>
-					<div class='contents-row feat'>
+					<ul>
+						<li class='slide-row slide-1'>
+						</li>
+					</ul>
+				</div>
+				<div class='gutter'>
+					<div class='content-row feat'>
+						<span class='arr-down'></span>
 						<dl class='feat-01'>
 							<dt>Embedded Vision Technology</dt>
 							<dd>Our company works on Embedded Vision. Basically, Embedded and Computer systems working together is referred to as embedded vision. These systems are detveloped for Consumer Electronics, Medical equipments, Automobile etc.
@@ -52,7 +52,7 @@ include($GP -> INC.'doc.head.php');
 						</dl>
 					</div>
 					<!--↓↓ Focus & NEWS, Download Content-row ↓↓-->
-					<div class='conts-row'>
+					<div class='content-row'>
 						<div class='focus-box conts-col-1'>
 							<div class='focus-box-in'>
 								<h4>Focus</h4>
@@ -63,15 +63,15 @@ include($GP -> INC.'doc.head.php');
 								</ul>
 								<h5 id='focus_01' class='current'>CES 2015 innovation awards_1</h5>
 								<span class='focus-item current'>
-									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the trength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone There's a hero If you look in side your heart You don't have to be ...
 								</span>
 								<h5 id='focus_02' class='sr-only'>CES 2015 innovation awards_2</h5>
 								<span class='focus-item sr-only'>
-									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the trength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone There's a hero If you look in side your heart You don't have to be ...
 								</span>
 								<h5 id='focus_03' class='sr-only'>CES 2015 innovation awards_3</h5>
 								<span class='focus-item sr-only'>
-									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the strength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone Look in side you and be strong And you'll finally see the truth That a hero lies in you  There's a hero If you look in side your heart You don't have to be afraid Of wh....
+									There's a hero If you look in side your heart You don't have to be afraid Of what you are There's an answer If you reach in to your soul And the sorrow that you know Will melt away And then a hero comes along With the trength to carry on And you cast your fears aside And you know you can survive So when you feel like hope is gone There's a hero If you look in side your heart You don't have to be ...
 								</span>
 							</div>
 						</div>
@@ -79,7 +79,6 @@ include($GP -> INC.'doc.head.php');
 							<div class='biz-box'>
 								<div class='box-in'>
 									<h5>Business</h5>
-									<span>한양정보통신의 신기술에 대해 궁금하신 점을 문의해주세요</span>
 									<span class='email'><a href='mailto:adasone@hanyang.co.kr'>adasone@hanyang.co.kr</a></span>
 									<span class='tel'>+82-2-2279-1400</span>
 								</div>
@@ -87,7 +86,7 @@ include($GP -> INC.'doc.head.php');
 							<div class='download-box'>
 								<div class='box-in'>
 									<h5>Download<br /><span>Center</span></h5>
-									<span>메뉴얼/App/PC Viewer <br />펌웨어 <strong>다운로드 센터</strong></span>
+									<span>다운로드 센터</span>
 									<a href='download/download.php'>다운로드 페이지 바로가기</a>
 								</div>
 							</div>
@@ -138,27 +137,6 @@ include($GP -> INC.'doc.head.php');
 						</div>
 					</div>
 					<!--↑↑ Focus & News, Business Content-row ↑↑-->
-					<!--↓↓ Locations, C/s Center Copyright ↓↓-->
-					<div class='conts-row location'>
-						<div class='conts-in'>
-							<dl>
-								<dt>LOCATIONS</dt>
-								<dd>137-842<br />3F,114, Bangbae-ro, Seocho-gu, <br />Seoul, Korea</dd>
-							</dl>
-							<dl>
-								<dt>C/S CENTER</dt>
-								<dd>+82-2-2279-1400<br />adasone@hanyang.co.kr</dd>
-							</dl>
-							<dl>
-								<dt>COPYRIGHT</dt>
-								<dd>Copyright 2015 by <br />Hanyang information &amp; communication.<br />All Rights Reserved</dd>
-							</dl>
-						</div>
-					</div>
-					<!--↑↑ Locations, C/s Center Copyright ↑↑-->
-					<div class='conts-row google-map'>
-						<img src='img/main/map-fs8.png'>
-					</div>
 				</div>
 				<!--↑↑ Contents ↑↑-->
 			</div>
