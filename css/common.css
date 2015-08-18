@@ -71,61 +71,13 @@ h1{
 	margin-right: 0;
 	background-position:-120px 0
 }
-.head .menu-box{
-	position: absolute;left: -1px;top: 32px;
-	width: 100%;overflow: hidden;
-}
-.gnb{
-	float: right;
-	overflow: hidden;
-}
-.menu-bg.active:after{
-	content: '';
-	position: absolute;
-	top: 56px;left: 0;bottom: 0;z-index: -1;
-	width: 100%;
-	background: #787776;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-	filter: alpha(opacity=90);
-	-khtml-opacity: 0.9;
-	-moz-opacity: 0.9;
-	opacity: 0.9;
-}
-.dep1{
-	display: block;
-	padding: 10px 24px 24px;
-	text-align: center;
-	font-family: 'wHYGothic_A1_200';font-size: 18px;color: #3f3f3f;
-}
-.dep1-row{
-	float: left;
-	text-align: center;
-}
-.dep2-group{
-	clear: both;
-	padding: 20px 0 52px;
-}
-.head .dep2-group:after{
-	content: "";
-	position: absolute;
-	top: 80px;bottom: 20px;
-	z-index: -1;
-	width: 181px;display: block;
-	border-left: 1px solid #908e8d;
-}
-.head .dep1-row:first-child .dep2-group:after{
-	border-left: 0 none;
-}
-a.dep2{
-	display: block;
-	padding: 8px 0px;
-	text-align: center;
-	font-family: 'wHYGothic_A1_300';font-size: 15px;color: #fff;
-}
-a.dep2:hover{
-	text-decoration: underline;
-}
 
+.dep1{
+	font-family: 'wHYGothic_A1_200';
+}
+.dep2{
+	font-family: 'wHYGothic_A1_300';
+}
 @media(min-width: 320px){
 	.gutter{
 		width: 100%
@@ -141,6 +93,34 @@ a.dep2:hover{
 		margin-right: 32px;
 		cursor: pointer;
 	}
+	.head .menu-box{
+		clear: both;
+		position: relative;
+		top: 16px;
+	}
+	a.dep1{
+		display: block;
+		padding: 8px 0 8px 32px;
+		background: #757575;
+		border-bottom: 1px solid #999999;
+		font-size: 15px;color: #f6f6f6;
+	}
+	a.dep1:hover{
+		text-decoration: underline;
+	}
+	a.dep2{
+		display: block;
+		padding: 9px 0 7px 45px;
+		background: #3a3a3a;
+		border-top: 1px solid #707070;
+		font-size: 13px;color: #fff;
+	}
+	.dep2-group li:first-child .dep2{
+		border-top: 0 none;
+	}
+	a.dep2:hover{
+		text-decoration: underline;
+	}
 }
 @media(min-width: 998px){
 	.gutter{
@@ -151,7 +131,63 @@ a.dep2:hover{
 		width:106px;height:46px;
 		background-position: -10px -60px;
 	}
-
+	.head .menu-box{
+		position: absolute;left: -1px;top: 32px;
+		width: 100%;overflow: hidden;
+	}
+	.gnb{
+		float: right;
+		overflow: hidden;
+	}
+	.menu-bg.active:after{
+		content: '';
+		position: absolute;
+		top: 56px;left: 0;bottom: 0;z-index: -1;
+		width: 100%;
+		background: #787776;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+		filter: alpha(opacity=90);
+		-khtml-opacity: 0.9;
+		-moz-opacity: 0.9;
+		opacity: 0.9;
+	}
+	a.dep1{
+		display: block;
+		padding: 10px 24px 24px;
+		text-align: center;
+		background: none;border: 0 none;
+		font-size: 18px;color: #3f3f3f;
+	}
+	.dep1-row{
+		float: left;
+		text-align: center;
+	}
+	.dep2-group{
+		clear: both;
+		padding: 20px 0 52px;
+	}
+	.head .dep2-group:after{
+		content: "";
+		position: absolute;
+		top: 80px;bottom: 20px;
+		z-index: -1;
+		width: 181px;display: block;
+		border-left: 1px solid #908e8d;
+	}
+	.head .dep1-row:first-child .dep2-group:after{
+		border-left: 0 none;
+	}
+	a.dep2{
+		display: block;
+		padding: 8px 0px;
+		text-align: center;
+		background: none;
+		border: 0 none;
+		font-size: 15px;color: #fff;
+	}
+	a.dep2:hover{
+		text-decoration: underline;
+	}
 }
 @media(min-width: 1054px){
 	.gutter{
