@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
 	var $gnb = $('#gnb');
-	var isTest = false;
+	var isTest = true;
 	if(isTest)
 	{
 		var $menuBg = $('#menu_bg').addClass('active');

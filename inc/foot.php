@@ -6,8 +6,8 @@
 			</div>
 			<div class='foot-body'>
 				<div class='gutter'>
-					<div class='menu-box'>
-						<ul class='foot-menus'>
+					<div class='menu-box' id='foot_menu_box'>
+						<ul class='foot-menu-01'>
 							<li class='m1 dep1-row'>
 								<a href='about/about.php' class='dep1'  title='Adas One'>COMPANY</a>
 								<ul class='dep2-group'>
@@ -25,7 +25,7 @@
 								</ul>
 							</li>
 						</ul>
-						<ul>
+						<ul class='foot-menu-02'>
 							<li class='m3 dep1-row'>
 								<a href='news/notice.php' class='dep1'>NEWS</a>
 								<ul class='dep2-group'>
@@ -60,7 +60,7 @@
 						</ul>
 					</div>
 					<div class='location'>
-						<h4>LOCATIONS</h4>
+						<h4>LOCATIONS<span class='line deco'></span></h4>
 						<p>(우) 137-842<br />서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 3층<br />한양정보통신 임베디드연구소</p>
 						<img src='img/main/map.png' alt='서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 지도위치 이미지'>
 					</div>

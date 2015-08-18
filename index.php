@@ -22,9 +22,9 @@ include($GP -> INC.'doc.head.php');
 						</div>
 						<div class='text-box'>
 							<dl>
-								<dt>WEB SITE RENEWAL</dt>
-								<dd><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다. <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
-								<a href='#' class='go-link'>Go</a>
+								<dt><span>WEB SITE</span> RENEWAL</dt>
+								<dd class='extra-text'><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다.<br /> <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
+								<dd class='link-box'><a href='#' class='go-link'>Go</a></dd>
 								</dd>
 							</dl>
 						</div>
@@ -95,40 +95,40 @@ include($GP -> INC.'doc.head.php');
 									<h5 class='current'>NEWS</h5>
 									<div>
 										<ul>
-											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>뉴스 더보기</a>
 									</div>
 									<h5>EVENT</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>Event 더보기</a>
 									</div>
 									<h5>FAQ</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>FAQ 더보기</a>
 									</div>
 									<h5>Q&amp;A</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href=''><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>Q&amp;A 더보기</a>
 									</div>
