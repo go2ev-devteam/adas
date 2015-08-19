@@ -1,31 +1,64 @@
 $(document).ready(function()
 {
 	var $gnb = $('#gnb');
-	var isTest = true;
-	if(isTest)
-	{
-		// var $menuBg = $('#menu_bg').addClass('active');
-		// var $dep2Group = $gnb.find('.dep2-group').removeClass('sr-only');
-	}
-	else
-	{
-		// var $menuBg = $('#menu_bg')
-		// var $dep2Group = $gnb.find('.dep2-group');
-	}
+	var isMobile = false;
+	var isOpenDep1 = false;
+	var isOpenDep2 = false;
+	var $win = $(window);
+	var $menu_box = $('#menu_box');
+	var $select_lang = $('#select_lang');
+	var $foot_menu_box = $('#foot_menu_box');
+	var $btn_book = $('#btn_book');
+	var $menuBg = $('#menu_bg');
+	var $dep2Group = $('.dep2-group');
+	var $dep1s = $gnb.find('.dep1');
+
 
 	$gnb.on('mouseenter', function()
 	{
-		if(isTest) return;
+		if(isMobile) return;
 
 		$menuBg.addClass('active');
 		$dep2Group.removeClass('sr-only');
 	}).on('mouseleave', function()
 	{
-		if(isTest) return;
+		if(isMobile) return;
 
 		$menuBg.removeClass('active');
 		$dep2Group.addClass('sr-only');
 	});
+
+	$btn_book.on('click', function()
+	{
+		if(!isOpenDep1)
+		{
+			$menu_box.removeClass('sr-only');
+		}
+		else
+		{
+			$menu_box.addClass('sr-only');
+		}
+		isOpenDep1 = !isOpenDep1;
+	});
+	$dep1s.on('click', function()
+	{
+		var $this = $(this);
+		if($this.attr('isOpen')!='0')
+		{
+			window.location.href=$(this).attr('href');
+			return;
+		}
+
+		if(isMobile && isOpenDep1)
+		{
+			$dep2Group.addClass('sr-only')
+			$dep1s.attr('isOpen', '0');
+			$dep1s.find('span').removeClass('deco-minus').addClass('deco-plus');
+
+			$this.attr('isOpen', '1').next('.dep2-group').removeClass('sr-only');
+			$this.find('span').removeClass('deco-plus').addClass('deco-minus');
+		}
+	})
 	// var prevW = $win.width();
 	// $(window).resize(function()
 	// {
@@ -36,11 +69,7 @@ $(document).ready(function()
 	// 	prevW = $win.width();
 	// });
 
-	var $win = $(window);
-	var $menu_box = $('#menu_box');
-	var $select_lang = $('#select_lang');
-	var $foot_menu_box = $('#foot_menu_box');
-	var $btn_book = $('#btn_book');
+	
 	function visible(isShow, arr)
 	{
 		var len = arr.length;
@@ -56,7 +85,6 @@ $(document).ready(function()
 		{
 			for(i=0;i<len;++i)
 			{
-				console.log(i)
 				arr[i].addClass('sr-only');
 			}
 		}
@@ -69,36 +97,37 @@ $(document).ready(function()
 	function setPosition()
 	{
 		var w = $win.width();
-		if(w > W_1054)
+		if(w >= W_1054)
 		{
-			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text') ]);
+			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(false, [$btn_book]);
+			isMobile = false;
 		}
-		else if(w < W_1054 && w > W_998)
+		else if(w < W_1054 && w >= W_998)
 		{
-			visible(true, [$menu_box, $select_lang, $foot_menu_box, ]);
+			visible(true, [$menu_box, $select_lang, $foot_menu_box]);
 			visible(false, [$btn_book, $('.extra-text')]);
+			isMobile = false;
 		}
-		else if(w < W_998 && w > W_640)
+		else if(w < W_998 && w >= W_640)
 		{
-			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text') ]);
+			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text'), $dep2Group]);
 			visible(true, [$btn_book]);
+			isMobile = true;
 		}
 
-		else if(w < W_640 && w > W_320)
+		else if(w < W_640 && w >= W_320)
 		{
-			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
+			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text'), $dep2Group]);
 			visible(true, [$btn_book]);
+			isMobile = true;
 		}
 	}
 	$win.resize(function()
 	{
+		isOpenDep1 = false;
 		setPosition();
-		console.log('on');
 	});
-
-	
-
 
 	setPosition();
 });

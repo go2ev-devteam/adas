@@ -46,7 +46,51 @@
 	background-position:-50px 0;text-indent: -8888px;
 }
 @media(min-width: 320px){
+	.slide-addit{
+		width: 100%;
 
+	}
+	.ctrl-box{
+		float: none;
+		width: 100%;height: 32px;padding-top: 6px;
+		text-align: center;
+	}
+	.ctrl-box button{
+		margin-left: 0px; 
+		width:22px;height:22px;
+	}
+	.ctrl-box .slide-ctrl-prev{
+		background-position:-240px -60px
+	}
+	.ctrl-box .slide-ctrl-play{
+		margin: 0 40px;
+		background-position:-20px -10px;
+	}
+	.ctrl-box .slide-ctrl-next{
+		margin-right: 0px;
+		background-position:-240px -90px;
+	}
+	.text-box{
+		float: none;
+		width: 100%;height: 37px;
+	}
+	.text-box dl:first-child{
+		padding: 0px 40px 0 22px;
+	}
+	.text-box dl:first-child dt{
+		float: left;
+		margin-top: 6px;
+		font-size: 21px;color: #fff;
+	}
+	.text-box dl:first-child dt span{
+		font-size: 21px;color: #fff;
+	}
+	.text-box .link-box{
+		float: right;
+		margin-top: 7px;
+		width:20px;height:20px;
+		background-position:-120px -130px
+	}
 }
 @media(min-width: 640px){	
 	.slide-addit{
@@ -92,7 +136,7 @@
 		float: right;
 		margin-top: 7px;
 		width:20px;height:20px;
-		background-position:-120px -100px
+		background-position:-120px -130px
 	}
 
 }
@@ -100,7 +144,6 @@
 	.slide-addit{
 		left: 50%;margin-left: 94px;
 		width: 378px;
-		/*height: 290px;*/
 	}
 	.ctrl-box{
 		float: none;
@@ -181,14 +224,46 @@
 	font-family: 'wHYGothic_A1_300';font-size: 14px;
 }
 
-.feat-01{
-	background: url(../img/main/feat_01-fs8.png) no-repeat;
-}
-.feat-02{
-	background: url(../img/main/feat_02-fs8.png) no-repeat;
-}
-.feat-03{
-	background: url(../img/main/feat_03-fs8.png) no-repeat;
+
+@media(min-width: 320px){
+	.feat{
+		padding: 115px 0 24px;
+		height: 193px;
+	}
+	.feat dl{
+		position: absolute;left: 100%;top: 76px;
+		float: none;
+		width: auto;min-height: 195px;
+		text-align: left;
+	}
+	.feat-01{
+		background: url(../img/main/feat_01_320.png) no-repeat;
+	}
+	.feat-02{
+		background: url(../img/main/feat_02_320.png) no-repeat;
+	}
+	.feat-03{
+		background: url(../img/main/feat_03_320.png) no-repeat;
+	}
+	.feat .feat-01{
+		left: 0;
+	}
+	.feat dd,
+	.feat dt{
+		padding: 0 0 0 138px;
+	}
+	.feat dt{
+		margin: 0;
+		height: auto;
+	}
+	.feat dd{
+		margin: 5px 0 0;
+	}
+	.feat-01,
+	.feat-02,
+	.feat-03{
+		background-position: 14px top;
+	}
 }
 @media(min-width: 640px){
 	.feat{
@@ -200,6 +275,15 @@
 		float: none;
 		width: auto;min-height: 195px;
 		text-align: left;
+	}
+	.feat-01{
+		background: url(../img/main/feat_01-fs8.png) no-repeat;
+	}
+	.feat-02{
+		background: url(../img/main/feat_02-fs8.png) no-repeat;
+	}
+	.feat-03{
+		background: url(../img/main/feat_03-fs8.png) no-repeat;
 	}
 	.feat .feat-01{
 		left: 0;
@@ -261,7 +345,7 @@
 	background: #efefef;
 }
 .focus-box-in{
-	padding: 28px 40px 0;
+	
 	text-align: left;
 }
 .focus-box h4{
@@ -301,19 +385,40 @@
 	margin-top: 20px;
 	font-family: 'wHYGothic_A1_300';font-size: 14px;color: #626262;
 }
+@media(min-width: 320px){
+	.focus-box{
+		float: none;position: relative;
+		width: 100%;
+	}
+	.focus-box-in{
+		padding: 20px 20px 12px;
+	}
+	.focus-box h5{
+		font-size: 20px;
+	}
+}
 @media(min-width: 640px){
 	.focus-box{
 		float: none;position: relative;
 		width: 100%;height: 270px;
 	}
+	.focus-box-in{
+		padding: 28px 40px 0;
+	}
 	.focus-box h5{
 		font-size: 20px;
+	}
+	.focus-item{
+		padding: 0;
 	}
 }
 @media(min-width: 1054px){
 	.focus-box{
 		float: left;position: relative;
 		width: 50%;height: 270px;
+	}
+	.focus-box-in{
+		padding: 28px 40px 0;
 	}
 	.focus-box h5{
 		font-size: 18px;
@@ -335,18 +440,17 @@
 }
 .biz-box h5{
 	margin-bottom: 5px;
-	font-family: 'wHYGothic_A1_700';font-size: 18px;color: #d3d3d3;font-weight: normal;
+	font-family: 'wHYGothic_A1_700';color: #d3d3d3;font-weight: normal;
 }
 .biz-box span{
 	display: block;
-	font-family: 'wHYGothic_A1_450';font-size: 14px;font-weight: normal;
+	font-family: 'wHYGothic_A1_450';font-weight: normal;
 }
 .biz-box h5 + span{
 	color: #d3d3d3;
 }
 .email,
 .tel{
-	padding-left: 28px;
 	background: url(../img/main/ir_icon.png)no-repeat;
 }
 .email{
@@ -357,16 +461,42 @@
 	display: block;
 	color: #38eaff;
 	text-decoration: underline;
-	font-size: 16px;font-family: 'wHYGothic_A1_450';
+	font-family: 'wHYGothic_A1_450';
 }
 .tel{
 	margin-top: 5px;height:18px;width: 19px;
-	background-position:-240px -150px;text-decoration: underline;
+	background-position:-240px -160px;text-decoration: underline;
 	font-size: 16px;font-family: 'wHYGothic_A1_450';color: #fff;
 }
 .notice-box{
 	clear: left;
 	width: 100%;
+}
+@media(min-width: 320px){
+	.box-in{
+		padding: 10px 20px 0;
+	}
+	.biz-bix h5{
+		color: #fdfcfc;font-size: 15px;
+	}
+	.email,
+	.tel{
+		padding-left: 15px;
+	}
+	.email{
+		width:12px;height:8px;
+		background-position:-240px -210px;
+	}
+	.email a{
+		color: #38eaff;
+		font-size: 10px;
+	}
+	.tel{
+		width:12px;height:11px;
+		margin-top: 5px;
+		background-position:-240px -230px;
+		font-size: 10px;
+	}
 }
 @media(min-width: 640px){
 	.conts-col-2{
@@ -375,6 +505,22 @@
 	}
 	.box-in{
 		padding: 16px 39px 0;
+	}
+	.biz-bix h5{
+		color: #fdfcfc;font-size: 18px;
+	}
+	.email,
+	.tel{
+		padding-left: 28px;
+	}
+	.email a{
+		color: #38eaff;
+		font-size: 16px;
+	}
+	.tel{
+		margin-top: 5px;height:18px;width: 19px;
+		background-position:-240px -160px;
+		font-size: 16px;color: #fff;
 	}
 }
 @media(min-width: 1054px){
