@@ -14,7 +14,7 @@
 <script src='<?php echo $GP -> WEBROOT;?>js/jquery-1.9.1.min.js'></script>
 <script src='<?php echo $GP -> WEBROOT;?>js/respond.min.js'></script>
 <script src='<?php echo $GP -> WEBROOT;?>js/common.js' type="text/javascript"></script>
-<!-- <script id="TypeEngine" type='text/javascript' src="js/hy-1.1.js?client_c=4937128194"></script> -->
+<script id="TypeEngine" type='text/javascript' src='<?php echo $GP -> WEBROOT ?>js/hy-1.1.js?client_c=4937128194'></script>
 
 <?php
 $path_parts = pathinfo($_SERVER['PHP_SELF']);
