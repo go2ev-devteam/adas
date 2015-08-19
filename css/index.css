@@ -454,7 +454,7 @@
 	background: url(../img/main/ir_icon.png)no-repeat;
 }
 .email{
-	margin-top: 12px;width: 12px;height:20px;
+	width: 12px;height:20px;
 	background-position:-240px -126px;
 }
 .email a{
@@ -473,6 +473,10 @@
 	width: 100%;
 }
 @media(min-width: 320px){
+	.biz-box, 
+	.download-box{
+		width: 50%;height: 73px;
+	}
 	.box-in{
 		padding: 10px 20px 0;
 	}
@@ -484,8 +488,9 @@
 		padding-left: 15px;
 	}
 	.email{
-		width:12px;height:8px;
-		background-position:-240px -210px;
+		margin-top: 6px;
+		width:12px;height:10px;
+		background-position:-240px -208px;
 	}
 	.email a{
 		color: #38eaff;
@@ -493,7 +498,7 @@
 	}
 	.tel{
 		width:12px;height:11px;
-		margin-top: 5px;
+		margin-top: 8px;
 		background-position:-240px -230px;
 		font-size: 10px;
 	}
@@ -502,6 +507,10 @@
 	.conts-col-2{
 		float: none;
 		width: 100%;
+	}
+	.biz-box, 
+	.download-box{
+		width: 50%;height: 112px;
 	}
 	.box-in{
 		padding: 16px 39px 0;
@@ -512,6 +521,9 @@
 	.email,
 	.tel{
 		padding-left: 28px;
+	}
+	.email{
+		margin-top: 12px;
 	}
 	.email a{
 		color: #38eaff;
@@ -538,7 +550,7 @@
 	background: #ebebeb;
 }
 .download-box *{
-	font-size: 18px;font-weight: normal;
+	font-weight: normal;
 }
 .download-box h5{
 	font-family: 'wHYGothic_A1_700';
@@ -548,20 +560,41 @@
 }
 .download-box h5 + span{
 	display: block;
-	font-family: 'wHYGothic_A1_400';font-size: 16px;
-	line-height: 1.4;
+	font-family: 'wHYGothic_A1_400';
 }
 .download-box a{
 	display: block;
-	position: absolute;top: 22px;right: 25px;
-	background: url(../img/main/btn_download.png) no-repeat left top;
-	width: 75px;height: 74px;text-indent: -8888px;
+	position: absolute;
+	text-indent: -8888px;
 }
+@media(min-width: 320px){
+	.download-box{
+		background: #ec583a;
+	}
+	.download-box *{
+		font-size: 15px;
+		color: #fff;
+	}
+	.download-box a{
+		right: 12px;top: 17px;
+		width: 44px;height: 43px;
+		background: url(../img/main/btn_download_320.png) no-repeat left top;
+	}
+	.download-box h5{
+		line-height: 1.0;
+	}
+	.download-box h5 + span{
+		margin-top: 8px;
+		font-size: 11px;
+	}
+}
+
 @media(min-width: 640px){
 	.download-box{
 		background: #ec583a;
 	}
 	.download-box *{
+		font-size: 18px;
 		color: #fff;
 	}
 	.download-box a{
@@ -579,10 +612,14 @@
 		color: #5c5c5c;
 	}
 	.download-box a{
+		top: 22px;right: 25px;
+		width: 75px;height: 74px;
 		background: url(../img/main/btn_download.png) no-repeat left top;
 	}
 	.download-box h5 + span{
 		margin-top: 14px;
+		font-size: 16px;
+		line-height: 1.4;
 	}
 }
 
@@ -642,6 +679,24 @@
 	background: url(../img/main/ir_icon.png)no-repeat;
 	background-position:0 -20px;
 	text-indent: -9999px;
+}
+@media(min-width: 320px){
+	.notice-box{
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;*display: none;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+	.notice-box .link-more{
+		top: -34px;right: 39px;
+	}
+	.notice-box ul .date{
+		margin-right: 39px;
+	}
 }
 @media(min-width: 640px){
 	.notice-box{

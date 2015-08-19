@@ -62,7 +62,7 @@
 					<div class='location'>
 						<h4>LOCATIONS<span class='line deco'></span></h4>
 						<p>(우) 137-842<br />서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 3층<br />한양정보통신 임베디드연구소</p>
-						<img src='img/main/map.png' alt='서울특별시 서초구 방배로 114 (방배동 907-1) 소망빌딩 지도위치 이미지'>
+						<span class='map'></span>
 					</div>
 				</div>
 			</div>

@@ -334,8 +334,7 @@ table{
 	overflow: hidden;
 }
 .foot-top{
-	height: 42px;
-	padding-top: 24px;
+	
 	background: #d4d4d4;text-align: center;
 }
 .foot-top .gutter{
@@ -347,7 +346,7 @@ table{
 }
 
 .foot-body{
-	padding: 45px 15px 60px;
+	
 	overflow: hidden;
 	background: #606060;
 }
@@ -387,7 +386,7 @@ table{
 
 .foot .location h4{
 	position: relative;
-	font-size: 22px;font-family: 'wHYGothic_A1_800';color: #fff
+	font-family: 'wHYGothic_A1_800';color: #fff
 
 }
 .foot .location h4 span{
@@ -396,10 +395,9 @@ table{
 	background: url(../img/main/ir_icon.png) no-repeat 0px 0px
 }
 .foot .location p{
-	margin-top: 15px;
-	font-size: 14px;font-family: 'wHYGothic_A1_400';color: #fff;line-height: 1.4;
+	font-family: 'wHYGothic_A1_400';color: #fff;
 }
-.foot .location img{
+.foot .location .map{
 	display: block;
 }
 .foot-tail{
@@ -407,11 +405,57 @@ table{
 	color: #454545;
 }
 .copyright{
-	font-size: 14px;font-family: 'wHYGothic_A1_150';color: #454545
+	font-family: 'wHYGothic_A1_150';color: #454545
+}
+@media(min-width: 320px){
+	.foot{
+		margin-top: 8px;
+	}
+	.foot-top{
+		height: 50px;
+		padding: 0px 60px 0;
+	}
+	.foot-top .gutter{
+		font-size: 15px;
+		padding: 8px 0 0;
+	}
+	.foot-body{
+		height: 329px;
+		padding: 0 22px 0;
+	}
+	.foot-body .gutter{
+		padding-top: 26px;	
+	}
+
+	.foot .location{
+		float: none;
+		margin-top: 6px;
+		text-align: center;
+	}
+	.foot .location h4{
+		font-size: 15px;
+	}
+	.foot .location h4 span{
+		right: 50%;top: -5px;margin-right: -21px;
+	}
+	.foot .location p{
+		margin-top: 24px;
+		font-size: 11px;line-height: 1.2;
+	}
+	.foot .location .map{
+		margin: 30px 0;
+		margin-left: -22px;
+		width: 320px;height: 155px;
+		background: url(../img/main/map_320.png) no-repeat left top;
+	}
 }
 @media(min-width: 640px){
 	.foot .gutter{
 		width: 100%;
+	}
+	.foot-top{
+		height: 66px;
+		padding: 23px 0px 0;
 	}
 	.foot-top .gutter{
 		font-size:20px;
@@ -424,16 +468,25 @@ table{
 	.foot .location h4 span{
 		right: 50%;top: -5px;margin-right: -21px;
 	}
-	.foot .location img{
-		margin: 20px auto 0;
+	.foot .location .map{
+		margin: 22px 0 0 0px;
+		width: 522px;height: 155px;
+		background: url(../img/main/map_640.png) no-repeat left top;
+	}
+	.copyright{
+		font-size: 10px;
 	}
 }
 @media(min-width: 998px){
-	.foot .location img{
-		margin-top: 15px;
+	.foot-top{
+		height: 42px;
+		padding-top: 24px;
 	}
 	.foot-top .gutter{
 		font-size:24px;
+	}
+	.foot .location img{
+		margin-top: 15px;
 	}
 	.foot .location{
 		float: right;
@@ -444,8 +497,17 @@ table{
 		right: 0;top: -5px;
 		margin-right: 0;
 	}
-	.foot .location img{
-		margin: 15px 0 0 0;
+	.foot .location p{
+		margin-top: 15px;
+		font-size: 14px;line-height: 1.4;
+	}
+	.foot .location .map{
+		/*margin: 22px 0 0 0px;*/
+		width: 522px;height: 155px;
+		background: url(../img/main/map_640.png) no-repeat left top;
+	}	
+	.copyright{
+		font-size: 14px;
 	}
 }
 @media(min-width: 1025px){
@@ -458,10 +520,19 @@ table{
 	.foot-top .gutter{
 		font-size:24px;
 	}
+	.foot-body{
+		padding: 0px 15px 0px;
+	}
+	.foot-body .gutter{
+		padding: 45px 0 60px;
+	}
 	.foot .location{
 		float: right;
 		margin-top: 6px;
 		text-align: right;
+	}
+	.foot .location h4{
+		font-size: 22px;
 	}
 	.foot .location h4 span{
 		right: 0;top: -5px;
