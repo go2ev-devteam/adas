@@ -17,7 +17,7 @@
 									<li class='m1 dep1-row'>
 										<a href='<?php echo $GP -> WEBROOT;?>about/intro.php' class='dep1' onclick='return false' isOpen='0' title='Adas One'>COMPANY<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
-											<li><a href='<?php echo $GP -> WEBROOT;?>about/intro.php;?>' class='dep2' onclick='return false'><cite></cite>회사소개<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>about/intro.php' class='dep2' onclick='return false'><cite></cite>회사소개<span class='deco-arr'></span></a></li>
 											<li><a href='<?php echo $GP -> WEBROOT;?>about/adasone.php' class='dep2' onclick='return false'><cite></cite>ADAS ONE<span class='deco-arr'></span></a></li>
 											<li><a href='<?php echo $GP -> WEBROOT;?>about/tech.php' class='dep2' onclick='return false'><cite></cite>주요 기술<span class='deco-arr'></span></a></li>
 											<li><a href='<?php echo $GP -> WEBROOT;?>about/contact.php' class='dep2' onclick='return false'><cite></cite>찾아 오시는 길<span class='deco-arr'></span></a></li>

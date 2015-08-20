@@ -19,7 +19,8 @@
 <?php
 $path_parts = pathinfo($_SERVER['PHP_SELF']);
 $dir = $path_parts['dirname'];
-$filename = $path_parts['filename'];
+preg_match('/\/[\d\w]+$/', $dir, $matches);
+$filename = str_replace('/','',$matches[0]);
 
 $css_file = $filename.'.css';
 $js_file = $filename.'.js';

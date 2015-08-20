@@ -1,0 +1,135 @@
+.intro .top-wide-img{
+	display: block;
+	height: 1066px;
+	background:#000 url(../img/about/intro_head-fs8.png)no-repeat top center;
+}
+
+.adasone .top-wide-image{
+	height: 490px;
+	background: #8f8f8f url(../img/about/adas_head-fs8.png)no-repeat top center;
+}
+
+/* Tech */
+.tech .content-head h3,
+{
+	font-family: 'wHYGothic_A1_200';font-weight: normal;
+	color: #5d5d5d;
+}
+.tech .content-row img{
+	width: 100%;
+}
+.tech .content-row h4,
+.tech .h4-comment,
+.tech .h3-comment{
+	font-family: 'wHYGothic_A1_300';font-weight: normal;
+	color: #5d5d5d;
+}
+@media(min-width:320px){
+	.tech{
+		padding-bottom: 165px;
+	}
+	.tech .content-head h3{
+		padding-top: 117px;
+		font-size: 48px;
+		line-height: 53px;
+	}
+	.tech .h3-comment{
+		margin-top: 44px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.tech .content-row{
+		margin-top: 165px;
+		text-align: left;
+	}
+	.tech .content-row h4{
+		margin-top: 54px;
+		font-size: 30px;
+	}
+	.tech .h4-comment{
+		margin-top: 9px;
+		font-size: 14px;line-height: 18px;
+	}
+}
+@media(min-width:640px){
+	.tech .content-head h3{
+
+	}
+	.tech .h3-comment{
+	}
+}
+@media(min-width:998px){
+	.tech .content-head h3{
+
+	}
+	.tech .h3-comment{
+	}
+}
+@media(min-width:1024px){
+	.tech .content-head h3{
+
+	}
+	.tech .h3-comment{
+	}
+}
+
+/* Contact */
+.contact .content-row .gutter{
+	text-align: left;
+}
+.contact h3{
+	font-family: 'wHYGothic_A1_600';
+	color: #969696
+}
+.contact h3 span{
+	font-family: 'wHYGothic_A1_400';
+	color: #969696
+}
+.contact h4{
+	font-family: 'wHYGothic_A1_400';
+	color: #2d2d2d
+}
+.contact p,
+.contact ul li{
+	font-family: 'wHYGothic_A1_400';
+	color: #969696
+}
+
+@media(min-width:320px){
+	.contact h3,
+	.contact h3 span{
+		font-size: 22px;
+	}
+	.contact .content-head .gutter{
+		padding-top: 78px;
+	}
+	.contact h4{
+		margin-top: 65px;
+		font-size: 20px;line-height: 25px;
+	}
+	.contact h5{
+		margin-top: 24px;
+		font-size: 16px;
+	}
+	.contact .content-row p{
+		margin-top: 12px;
+		font-size: 16px;line-height: 25px;
+	}
+	.contact ul{
+		margin-top: 8px;
+		font-size: 16px;line-height: 25px;
+	}
+	.contact .map{
+		margin: 80px auto 0;
+		display: block;
+	}
+}
+@media(min-width:640px){
+	
+}
+@media(min-width:998px){
+	
+}
+@media(min-width:1024px){
+	
+}
