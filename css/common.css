@@ -525,6 +525,9 @@ table{
 	}
 }
 @media(min-width: 998px){
+	.foot{
+		margin-top: 0px;
+	}
 	.foot-top{
 		height: 66px;
 		padding-top: 0;

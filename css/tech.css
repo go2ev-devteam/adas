@@ -1,0 +1,62 @@
+.content-head h3,
+{
+	font-family: 'wHYGothic_A1_200';font-weight: normal;
+	color: #5d5d5d;
+}
+.content-row img{
+	width: 100%;
+}
+.content-row h4,
+.h4-comment
+.h3-comment{
+	font-family: 'wHYGothic_A1_300';font-weight: normal;
+	color: #5d5d5d;
+}
+@media(min-width:320px){
+	.body{
+		padding-bottom: 165px;
+	}
+	.content-head h3{
+		padding-top: 117px;
+		font-size: 48px;
+		line-height: 53px;
+	}
+	.h3-comment{
+		margin-top: 44px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.content-row{
+		margin-top: 165px;
+		text-align: left;
+	}
+	.content-row h4{
+		margin-top: 54px;
+		font-size: 30px;
+	}
+	.h4-comment{
+		margin-top: 9px;
+		font-size: 14px;line-height: 18px;
+	}
+}
+@media(min-width:640px){
+	.content-head h3{
+
+	}
+	.h3-comment{
+	}
+}
+@media(min-width:998px){
+	.content-head h3{
+
+	}
+	.h3-comment{
+	}
+}
+@media(min-width:1024px){
+	.content-head h3{
+
+	}
+	.h3-comment{
+	}
+}

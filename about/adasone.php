@@ -14,9 +14,7 @@ include_once($GP -> INC.'doc.head.php');
 		<div class='body' id='body'>
 			<div class='contents adasone' id='contents'>
 				<div class='content-head'>
-					<!-- <div class='gutter'> -->
-						<img src='../img/about/adas_head-fs8.png'>
-					<!-- </div> -->
+					<div class='top-wide-image'></div>
 				</div>
 				<div class='content-row'>
 					<div class='gutter'>

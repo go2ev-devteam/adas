@@ -15,7 +15,7 @@ include_once($GP -> INC.'doc.head.php');
 			<div class='contents intro' id='contents'>
 				<div class='content-head'>
 					<!-- <div class='gutter'> -->
-						<div class='head-img'></div>
+						<div class='top-wide-img'></div>
 					<!-- </div> -->
 				</div>
 				<div class='content-row'>

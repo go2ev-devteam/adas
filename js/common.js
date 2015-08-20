@@ -114,8 +114,8 @@ $(document).ready(function()
 		}
 		else if(w < W_1054 && w >= W_998)
 		{
-			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
-			visible(false, [$btn_book]);
+			visible(true, [$menu_box, $select_lang, $foot_menu_box]);
+			visible(false, [$btn_book, $('.extra-text')]);
 			isMobile = false;
 		}
 		else if(w < W_998 && w >= W_640)
@@ -127,7 +127,6 @@ $(document).ready(function()
 
 		else if(w < W_640 && w >= W_320)
 		{
-			console.log(w);
 			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(true, [$btn_book]);
 			isMobile = true;
