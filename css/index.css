@@ -154,6 +154,7 @@
 	}
 	.text-box{
 		width: auto;height: auto;
+		float: none;
 	}
 	.ctrl-box button{
 		width:33px;height:33px;
@@ -308,6 +309,7 @@
 @media(min-width: 1054px){
 	.feat{
 		padding: 115px 0 48px;
+		height: auto;
 	}
 
 	.feat dl{
@@ -391,7 +393,7 @@
 		width: 100%;
 	}
 	.focus-box-in{
-		padding: 20px 20px 12px;
+		padding: 20px 20px 40px;
 	}
 	.focus-box h5{
 		font-size: 20px;
@@ -439,7 +441,7 @@
 	background: #626262;
 }
 .biz-box h5{
-	margin-bottom: 5px;
+	
 	font-family: 'wHYGothic_A1_700';color: #d3d3d3;font-weight: normal;
 }
 .biz-box span{
@@ -464,7 +466,7 @@
 	font-family: 'wHYGothic_A1_450';
 }
 .tel{
-	margin-top: 5px;height:18px;width: 19px;
+	margin-top: 5px;
 	background-position:-240px -160px;text-decoration: underline;
 	font-size: 16px;font-family: 'wHYGothic_A1_450';color: #fff;
 }
@@ -497,7 +499,7 @@
 		font-size: 10px;
 	}
 	.tel{
-		width:12px;height:11px;
+		height:11px;
 		margin-top: 8px;
 		background-position:-240px -230px;
 		font-size: 10px;
@@ -513,25 +515,28 @@
 		width: 50%;height: 112px;
 	}
 	.box-in{
-		padding: 16px 39px 0;
+		padding: 20px 38px 0;
 	}
 	.biz-bix h5{
-		color: #fdfcfc;font-size: 18px;
+		font-size: 18px;
+		color: #fdfcfc;
 	}
 	.email,
 	.tel{
-		padding-left: 28px;
+		padding-left: 18px;
+		width: auto;height: auto;
 	}
 	.email{
-		margin-top: 12px;
+		margin-top: 8px;
+		background-position:-240px -202px;
 	}
 	.email a{
 		color: #38eaff;
 		font-size: 16px;
 	}
 	.tel{
-		margin-top: 5px;height:18px;width: 19px;
-		background-position:-240px -160px;
+		margin-top: 5px;
+		background-position:-240px -224px;
 		font-size: 16px;color: #fff;
 	}
 }
@@ -542,6 +547,9 @@
 	}
 	.box-in{
 		padding: 20px 24px 0;
+	}
+	.biz-box h5{
+		margin-bottom: 5px;
 	}
 }
 /*------------    Download    ------------*/
@@ -598,10 +606,13 @@
 		color: #fff;
 	}
 	.download-box a{
+		top: 22px;right: 39px;
+		width: 75px;height: 74px;
 		background: url(../img/main/btn_download_640.png) no-repeat left top;
 	}
 	.download-box h5 + span{
-		margin-top: 10px;
+		margin-top: 12px;
+		font-size: 16px;
 	}
 }
 @media(min-width: 1054px){
@@ -640,7 +651,8 @@
 }
 .notice-box h5:hover,
 .notice-box h5.current{
-	border-bottom: 1px solid #5c5c5c;
+	border-bottom: 1px solid #ec583a;
+	color: #ec583a;
 }
 .notice-box h5:after{
 	content: '';
@@ -682,14 +694,7 @@
 }
 @media(min-width: 320px){
 	.notice-box{
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;*display: none;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		border: 0;
+		display: none;
 	}
 	.notice-box .link-more{
 		top: -34px;right: 39px;
@@ -700,6 +705,7 @@
 }
 @media(min-width: 640px){
 	.notice-box{
+		display: block;
 		clear: both;
 		height: 158px;
 	}
@@ -708,6 +714,11 @@
 	}
 	.notice-box ul .date{
 		margin-right: 39px;
+	}
+	.notice-box ul a{
+		float: left;
+		display: block;
+		padding-left: 38px;
 	}
 }
 @media(min-width: 1054px){
@@ -719,5 +730,10 @@
 	}
 	.notice-box ul .date{
 		margin-right: 14px;
+	}
+	.notice-box ul a{
+		float: left;
+		display: block;
+		padding-left: 38px;
 	}
 }

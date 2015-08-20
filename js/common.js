@@ -10,22 +10,27 @@ $(document).ready(function()
 	var $foot_menu_box = $('#foot_menu_box');
 	var $btn_book = $('#btn_book');
 	var $menuBg = $('#menu_bg');
-	var $dep2Group = $('.dep2-group');
+	var $dep2Group = $gnb.find('.dep2-group');
+	var $footDep2s = $foot_menu_box.find('.dep2-group');
 	var $dep1s = $gnb.find('.dep1');
-
+	var $dep2s = $gnb.find('.dep2');
+	var $menu_box_tit = $('#menu_box_tit');
 
 	$gnb.on('mouseenter', function()
 	{
 		if(isMobile) return;
 
 		$menuBg.addClass('active');
-		$dep2Group.removeClass('sr-only');
-	}).on('mouseleave', function()
+		visible(true, [$dep2Group, $menu_box_tit])
+
+	})
+	$menu_box.on('mouseleave', function()
 	{
+		// return;
 		if(isMobile) return;
 
 		$menuBg.removeClass('active');
-		$dep2Group.addClass('sr-only');
+		visible(false,[$dep2Group, $menu_box_tit])
 	});
 
 	$btn_book.on('click', function()
@@ -58,6 +63,10 @@ $(document).ready(function()
 			$this.attr('isOpen', '1').next('.dep2-group').removeClass('sr-only');
 			$this.find('span').removeClass('deco-plus').addClass('deco-minus');
 		}
+	})
+	$dep2s.on('click', function()
+	{
+		window.location.href = $(this).attr('href');
 	})
 	// var prevW = $win.width();
 	// $(window).resize(function()
@@ -105,20 +114,21 @@ $(document).ready(function()
 		}
 		else if(w < W_1054 && w >= W_998)
 		{
-			visible(true, [$menu_box, $select_lang, $foot_menu_box]);
-			visible(false, [$btn_book, $('.extra-text')]);
+			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
+			visible(false, [$btn_book]);
 			isMobile = false;
 		}
 		else if(w < W_998 && w >= W_640)
 		{
-			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text'), $dep2Group]);
+			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(true, [$btn_book]);
 			isMobile = true;
 		}
 
 		else if(w < W_640 && w >= W_320)
 		{
-			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text'), $dep2Group]);
+			console.log(w);
+			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(true, [$btn_book]);
 			isMobile = true;
 		}

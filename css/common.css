@@ -77,6 +77,19 @@ h1{
 	margin-right: 0;
 	background-position:-120px 0
 }
+.head .menu-box-tit{
+	position: absolute;left: 34px;top: 95px;
+	width: 192px;
+}
+.head .menu-box-tit p{
+	font-family: 'wHYGothic_A1_300';font-size: 14px;color: #fff;
+}
+.head .menu-box-tit a{
+	display: block;
+	margin-top: 12px;
+	font-family: 'wHYGothic_A1_600';font-size: 24px;color: #fff;
+	text-decoration: underline;font-weight: bold;
+}
 .gnb{
 	overflow: hidden;
 }
@@ -93,12 +106,7 @@ h1{
 	float: right;
 	background: url(../img/main/ir_icon.png) no-repeat ;
 }
-.dep2 cite{
-	float: left;
-	margin: 5px 8px 0 0;
-	width: 3px;height: 3px;
-	background-position:-250px -190px;
-}
+
 @media(min-width: 320px){
 	.gutter{
 		width: 100%
@@ -111,6 +119,9 @@ h1{
 	.btn-book{
 		margin-right: 30px;margin-top: 0px;
 		cursor: pointer;
+	}
+	.head .menu-box-tit{
+		display: none;
 	}
 	.head .menu-box{
 		clear: both;
@@ -158,6 +169,12 @@ h1{
 	a.dep2:hover{
 		text-decoration: underline;
 	}
+	.dep2 cite{
+		float: left;
+		margin: 5px 8px 0 0;
+		width: 3px;height: 3px;
+		background-position:-250px -190px;
+	}
 }
 @media(min-width: 640px){
 	h1{
@@ -168,6 +185,9 @@ h1{
 	.btn-book{
 		margin-right: 30px;margin-top: 5px;
 		cursor: pointer;
+	}
+	.head .menu-box-tit{
+		display: none;
 	}
 	.head .menu-box{
 		clear: both;
@@ -216,6 +236,12 @@ h1{
 	a.dep2:hover{
 		text-decoration: underline;
 	}
+	.dep2 cite{
+		float: left;
+		margin: 5px 8px 0 0;
+		width: 3px;height: 3px;
+		background-position:-250px -190px;
+	}
 }
 @media(min-width: 998px){
 	.gutter{
@@ -225,6 +251,9 @@ h1{
 		margin-left: 52px;
 		width:106px;height:46px;
 		background-position: -10px -60px;
+	}
+	.head .menu-box-tit{
+		display: block;
 	}
 	.head .menu-box{
 		position: absolute;left: -1px;top: 32px;
@@ -245,6 +274,7 @@ h1{
 		-moz-opacity: 0.9;
 		opacity: 0.9;
 	}
+	
 	a.dep1{
 		display: block;
 		padding: 10px 24px 24px;
@@ -287,6 +317,9 @@ h1{
 	a.dep2:hover{
 		text-decoration: underline;
 	}
+	a.dep2 cite{
+		display: none;
+	}
 }
 @media(min-width: 1054px){
 	.gutter{
@@ -296,6 +329,9 @@ h1{
 		margin-left: 52px;
 		width:106px;height:46px;
 		background-position: -10px -60px;
+	}
+	.head .menu-box-tit{
+		display: block;
 	}
 }
 
@@ -318,9 +354,7 @@ table{
 	display: block;
 }
 @media(min-width: 640px){
-	.body{
-		padding-bottom: 5px;
-	}
+	
 }
 @media(min-width: 1054px){
 	.body{
@@ -413,7 +447,7 @@ table{
 	}
 	.foot-top{
 		height: 50px;
-		padding: 0px 60px 0;
+		padding: 0px 40px 0;
 	}
 	.foot-top .gutter{
 		font-size: 15px;
@@ -421,7 +455,7 @@ table{
 	}
 	.foot-body{
 		height: 329px;
-		padding: 0 22px 0;
+		padding: 0 0px 0;
 	}
 	.foot-body .gutter{
 		padding-top: 26px;	
@@ -443,13 +477,19 @@ table{
 		font-size: 11px;line-height: 1.2;
 	}
 	.foot .location .map{
-		margin: 30px 0;
-		margin-left: -22px;
+		margin: 30px auto 0;
+		/*margin-left: -22px;*/
 		width: 320px;height: 155px;
 		background: url(../img/main/map_320.png) no-repeat left top;
 	}
+	.copyright{
+		font-size: 10px;
+	}
 }
 @media(min-width: 640px){
+	.foot{
+		margin-top: 4px;
+	}
 	.foot .gutter{
 		width: 100%;
 	}
@@ -465,24 +505,32 @@ table{
 		margin-top: 6px;
 		text-align: center;
 	}
+	.foot .location h4{
+		font-size: 22px;
+	}
 	.foot .location h4 span{
 		right: 50%;top: -5px;margin-right: -21px;
 	}
+	.foot .location p{
+		margin-top: 14px;
+		font-size: 14px;
+	}
 	.foot .location .map{
-		margin: 22px 0 0 0px;
+		margin: 20px auto 0px;
 		width: 522px;height: 155px;
 		background: url(../img/main/map_640.png) no-repeat left top;
 	}
 	.copyright{
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 @media(min-width: 998px){
 	.foot-top{
-		height: 42px;
-		padding-top: 24px;
+		height: 66px;
+		padding-top: 0;
 	}
 	.foot-top .gutter{
+		padding-top: 24px;
 		font-size:24px;
 	}
 	.foot .location img{
@@ -521,6 +569,7 @@ table{
 		font-size:24px;
 	}
 	.foot-body{
+		height: 375px;
 		padding: 0px 15px 0px;
 	}
 	.foot-body .gutter{

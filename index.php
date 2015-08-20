@@ -95,40 +95,40 @@ include($GP -> INC.'doc.head.php');
 									<h5 class='current'>NEWS</h5>
 									<div>
 										<ul>
-											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 뉴스 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>뉴스 더보기</a>
 									</div>
 									<h5>EVENT</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Event 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>Event 더보기</a>
 									</div>
 									<h5>FAQ</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 FAQ 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>FAQ 더보기</a>
 									</div>
 									<h5>Q&amp;A</h5>
 									<div class='sr-only'>
 										<ul>
-											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
-											<li><a href='#'><span>&middot;</span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
+											<li><a href='#'><span><strong>&middot;</strong></span>이 글은 Q&amp;A 게시글입니다</a><span class='date'>2015.06.25</span></li>
 										</ul>
 										<a href='news/news.php' class='link-more'>Q&amp;A 더보기</a>
 									</div>
