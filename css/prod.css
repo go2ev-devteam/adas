@@ -1,0 +1,35 @@
+.sm100 h2{
+	font-family: 'wHYGothic_A1_300';
+}
+.sm100 h2 strong{
+	font-family: 'wHYGothic_A1_700';
+}
+.sm100 .content-head li{
+	font-family: 'wHYGothic_A1_300';
+}
+.sm100 h3{
+	font-family: 'wHYGothic_A1_800';
+}
+.h3-comment{
+	font-family: 'wHYGothic_A1_400';
+}
+.content-row li{
+	font-family: 'wHYGothic_A1_400';
+}
+@media(min-width: 320){
+	.sm100 h2{
+		font-size: 57px;color: #626262;
+	}
+	.sm100 .content-head li{
+		font-size: 14px;color: #626262;
+	}
+	.sm100 h3{
+		font-size: 40px;color: #3f3f3f;
+	}
+	.h3-comment{
+		font-size: 16px;color: #3f3f3f;
+	}
+	.content-row li{
+		font-size: 16px;line-height: 32px;color: #2f2f2f;
+	}
+}
