@@ -1,7 +1,7 @@
 			<div class='head'>
 				<div class='row head-top'>
 					<div class='gutter'>
-						<h1><a href='#'>ADAS ONE</a></h1>
+						<h1><a href='<?php echo $GP -> WEBROOT;?>'>ADAS ONE</a></h1>
 						<button type='button' class='btn-book sr-only' id='btn_book' title='메뉴 펼침'>gnb 펼침 버튼</button>
 						<ul class='select-lang' id='select_lang'>
 							<li><a href='index.php'>언어 선택 - 한국어 </a></li>

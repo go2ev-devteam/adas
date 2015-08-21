@@ -10,10 +10,12 @@
 }
 
 /* Tech */
-.tech .content-head h3,
-{
+.tech .content-head h3{
 	font-family: 'wHYGothic_A1_200';font-weight: normal;
 	color: #5d5d5d;
+}
+.tech .content-head h3 strong{
+	font-family: 'wHYGothic_A1_600';
 }
 .tech .content-row img{
 	width: 100%;
@@ -29,18 +31,21 @@
 		padding-bottom: 165px;
 	}
 	.tech .content-head h3{
-		padding-top: 117px;
+		margin-top: 117px;
 		font-size: 48px;
 		line-height: 53px;
 	}
 	.tech .h3-comment{
-		margin-top: 44px;
+		margin-top: 40px;
 		font-size: 18px;
 		line-height: 24px;
 	}
 	.tech .content-row{
 		margin-top: 165px;
 		text-align: left;
+	}
+	.tech .content-row:first-child{
+		margin-top: 148px;
 	}
 	.tech .content-row h4{
 		margin-top: 54px;
@@ -86,13 +91,24 @@
 	color: #969696
 }
 .contact h4{
+	background: url(../img/main/ir_icon.png) no-repeat -260px -4px;
 	font-family: 'wHYGothic_A1_400';
-	color: #2d2d2d
+	color: #2d2d2d;
+}
+.contact h5{
+	font-family: 'wHYGothic_A1_400';
+	color: #969696;
 }
 .contact p,
 .contact ul li{
 	font-family: 'wHYGothic_A1_400';
 	color: #969696
+}
+.contact .map{
+	display: block;
+}
+.contact .map img{
+	display: block;width: 100%;
 }
 
 @media(min-width:320px){
@@ -101,18 +117,18 @@
 		font-size: 22px;
 	}
 	.contact .content-head .gutter{
-		padding-top: 78px;
+		padding-top: 73px;
 	}
 	.contact h4{
-		margin-top: 65px;
+		margin-top: 65px;padding-left: 20px;
 		font-size: 20px;line-height: 25px;
 	}
 	.contact h5{
-		margin-top: 24px;
-		font-size: 16px;
+		margin-top: 22px;
+		font-size: 16px;line-height: 25px;
 	}
 	.contact .content-row p{
-		margin-top: 12px;
+		margin-top: 22px;
 		font-size: 16px;line-height: 25px;
 	}
 	.contact ul{
@@ -120,16 +136,21 @@
 		font-size: 16px;line-height: 25px;
 	}
 	.contact .map{
-		margin: 80px auto 0;
-		display: block;
+		margin: 20px auto 0;
 	}
 }
 @media(min-width:640px){
-	
+	.contact .map{
+		margin: 20px auto 0;
+	}
 }
 @media(min-width:998px){
-	
+	.contact .map{
+		margin: 80px auto 0;
+	}
 }
 @media(min-width:1024px){
-	
+	.contact .map{
+		margin: 80px auto 0;
+	}
 }

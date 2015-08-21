@@ -34,25 +34,27 @@ include($GP -> INC.'doc.head.php');
 						</li>
 					</ul>
 				</div>
-				<div class='gutter'>
-					<div class='content-row feat'>
-						<span class='arr-down'></span>
-						<dl class='feat-01'>
-							<dt>Embedded Vision Technology</dt>
-							<dd>Our company works on Embedded Vision. Basically, Embedded and Computer systems working together is referred to as embedded vision. These systems are detveloped for Consumer Electronics, Medical equipments, Automobile etc.
-							</dd>
-						</dl>
-						<dl class='feat-02'>
-							<dt>IoT Technology</dt>
-							<dd>Another technology is IoT which is based on closely associated machine-to-machine (M2M) communication products in manufacturing and power, oil and gas utilities.</dd>
-						</dl>
-						<dl class='feat-03'>
-							<dt>Car DVR Technology</dt>
-							<dd>Hanyang offers a Car DVR, a portable Car Digital Video Recorder with wide angle lens that captures high definition video and displays them on LCD. It automatically records and saves </dd>
-						</dl>
+				<div class='content-row feat'>
+						<div class='gutter'>
+							<span class='arr-down'></span>
+							<dl class='feat-01'>
+								<dt>Embedded Vision Technology</dt>
+								<dd>Our company works on Embedded Vision. Basically, Embedded and Computer systems working together is referred to as embedded vision. These systems are detveloped for Consumer Electronics, Medical equipments, Automobile etc.
+								</dd>
+							</dl>
+							<dl class='feat-02'>
+								<dt>IoT Technology</dt>
+								<dd>Another technology is IoT which is based on closely associated machine-to-machine (M2M) communication products in manufacturing and power, oil and gas utilities.</dd>
+							</dl>
+							<dl class='feat-03'>
+								<dt>Car DVR Technology</dt>
+								<dd>Hanyang offers a Car DVR, a portable Car Digital Video Recorder with wide angle lens that captures high definition video and displays them on LCD. It automatically records and saves </dd>
+							</dl>
 					</div>
+				</div>
 					<!--↓↓ Focus & NEWS, Download Content-row ↓↓-->
-					<div class='content-row'>
+				<div class='content-row'>
+					<div class='gutter'>
 						<div class='focus-box conts-col-1'>
 							<div class='focus-box-in'>
 								<h4>Focus</h4>
@@ -135,12 +137,12 @@ include($GP -> INC.'doc.head.php');
 								</div>
 							</div>
 						</div>
+						<!--↑↑ Focus & News, Business Content-row ↑↑-->
 					</div>
-					<!--↑↑ Focus & News, Business Content-row ↑↑-->
+					<!--↑↑ Gutter ↑↑-->
 				</div>
 				<!--↑↑ Contents ↑↑-->
 			</div>
-			<!--↑↑ Gutter ↑↑-->
 		</div>
 		<!--↑↑ Body & Content ↑↑-->
 		<!--↓↓ Foot ↓↓-->
