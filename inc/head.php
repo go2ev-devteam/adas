@@ -26,7 +26,7 @@
 									<li class='m2 dep1-row'>
 										<a href='prod/sm-100.php' class='dep1' onclick='return false' isOpen='0'>PRODUCT<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
-											<li><a href='<?php echo $GP -> WEBROOT;?>prod/sm-100.php' class='dep2' onclick='return false'><cite></cite>SM-100<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep2' onclick='return false'><cite></cite>SM-100<span class='deco-arr'></span></a></li>
 											<li><a href='<?php echo $GP -> WEBROOT;?>prod/aeb.php' class='dep2' onclick='return false'><cite></cite>AEB<span class='deco-arr'></span></a></li>
 										</ul>
 									</li>
