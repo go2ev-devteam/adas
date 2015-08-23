@@ -47,10 +47,10 @@
 										</ul>
 									</li>
 									<li class='m5 dep1-row'>
-										<a href='<?php echo $GP -> WEBROOT;?>community/faq.php' class='dep1' onclick='return false' isOpen='0'>FAQ<span class='deco-plus'></span></a>
+										<a href='<?php echo $GP -> WEBROOT;?>faq/faq.php' class='dep1' onclick='return false' isOpen='0'>FAQ<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
-											<li><a href='<?php echo $GP -> WEBROOT;?>community/faq.php' class='dep2' onclick='return false'><cite></cite>FAQ<span class='deco-arr'></span></a></li>
-											<li><a href='<?php echo $GP -> WEBROOT;?>community/qna.php' class='dep2' onclick='return false'><cite></cite>Q&amp;A<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>faq/faq.php' class='dep2' onclick='return false'><cite></cite>FAQ<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>faq/qna.php' class='dep2' onclick='return false'><cite></cite>Q&amp;A<span class='deco-arr'></span></a></li>
 										</ul>
 									</li>
 									<li class='m6 dep1-row'>

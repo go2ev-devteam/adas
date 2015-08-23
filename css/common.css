@@ -356,6 +356,43 @@ table{
 .bread-crumb li a{
 	display: block;
 }
+@media(min-width: 320px){
+	.pagination{
+		clear: both;
+		margin-top: 90px;padding: 5px 0;
+		overflow: hidden;
+		text-align: center;
+	}
+	.pagination a{
+		display: inline-block;
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+	.pagination a:hover{
+		text-decoration: underline;
+	}
+	.pagination a.current{
+		font-size: 18px;font-weight: bold;
+		text-decoration: underline;color: green;
+	}
+	.pagination .btn-icon{
+		width: 10px;height: 20px;
+		background: url(../img/main/ir_icon.png) no-repeat;
+		text-indent: -8888px;
+	}
+	.pagination .prev10{
+		background-position:-210px 0;
+	}
+	.pagination .prev{
+		background-position:-170px 0;
+	}
+	.pagination .next{
+		background-position:-90px -20px;
+	}
+	.pagination .next10{
+		background-position:-130px -20px
+	}
+}
 @media(min-width: 640px){
 	
 }
@@ -388,7 +425,7 @@ table{
 	background: #606060;
 }
 .foot-tail{
-	padding: 26px 0 62px;
+	padding: 26px 0 26px;
 	background: #fff;
 }
 

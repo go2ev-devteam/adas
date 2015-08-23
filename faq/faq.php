@@ -1,44 +1,26 @@
 <?php
-$page_title = 'ADASONE 공지사항';
+$page_title = 'FAQ';
 include_once('../_init.php');
 include_once($GP -> INC.'doc.head.php');
 ?>
 <body>
 	<div class='root'>
 		<?php 
-		include_once($GP -> INC.'accessibility.php');
-		include_once($GP -> INC.'head.php');
+		include($GP -> INC.'accessibility.php');
+		include($GP -> INC.'head.php');
 		?>
 		<!--↑↑ Header ↑↑-->
-		<!--↓↓ Body ↓↓-->
-		<div class='body notice' id='body'>
-			<div class='gutter'>
-				<div class='contents' id='contents'>
-					<!-- <ul class='bread-crumb'>
-						<li><a href='index.php' class='crumb-home'>HOME &gt; </a></li>
-						<li><a href='index.php'>NEWS &gt; </a></li>
-						<li><a href='index.php'>공지사항</a></li>
-					</ul> -->
-					<h2>공지사항</h2>
-					<div class='content-head'>
-						<div class='gutter'>
-							<img src='../img/news/thumb_top.png' alt=''>
-							<div class='h3-box'>
-								<h3>Under a lover's sky I'm gonna...</h3>
-								<div class='h3-comment'>
-									<span>2015.07.03</span>
-									<span>And no one's gonna be around<br />
-										If you think that you won't fall<br />
-										Well just wait until, 'till the sun goes down<br />
-										Underneath the starlight starlight<br />
-										There's a magical feeling so right<br />
-										It will steal your heart tonight<br />
-									</span>
-								</div>
-							</div>
-						</div>
+		<!--↓↓ Body & Content ↓↓-->
+		<div class='body faq' id='body'>
+			<div class='contents' id='contents'>
+				<h2>FAQ</h2>
+				<div class='content-head'>
+					<div class='gutter'>
+						<h3>자주 찾는 질문 TOP 20</h3>
+						<span class='h3-comment'>제품사용에 필요한 설치메뉴얼, PC뷰어, 어플리케이션 등을 다운받을 수 있습니다.<br />동영상 재생 관련 문제가 생겼을 시에는 FAQ를 확인하여 주세요. </span>
 					</div>
-					<div class='content-row first-row'>
+				</div>
+				<div class='content-row first-row'>
 						<div class='gutter'>
 							<table class='table-basic notice-table'>
 								<colgroup><col style='width:15%;'><col style='width:70%;'><col style='width:15%;'></colgroup>
@@ -119,7 +101,6 @@ include_once($GP -> INC.'doc.head.php');
 							</div>
 						</div>
 					</div>
-				</div>
 				<!--↑↑ Contents ↑↑-->
 			</div>
 		</div>
