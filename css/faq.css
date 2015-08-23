@@ -1,10 +1,13 @@
-.faq h2{
+.faq h2,
+.qna h2{
 	font-family: 'wHYGothic_A1_800';
 }
-.faq .content-head h3{
+.faq .content-head h3,
+.qna .content-head h3{
 	font-family: 'wHYGothic_A1_600';
 }
-.faq .content-head .h3-comment{
+.faq .content-head .h3-comment,
+.qna .content-head .h3-comment{
 	font-family: 'wHYGothic_A1_200';
 }
 .faq .content-head h4,
@@ -17,30 +20,39 @@
 .faq table td a:hover{
 	text-decoration: underline;
 }
+.qna .row-comment{
+	font-family: 'wHYGothic_A1_400'
+}
+.qna form label{
+	font-family: 'wHYGothic_A1_600';
+}
+.qna .btn-submit{
+	font-family: 'wHYGothic_A1_600';
+}
 @media(min-width: 320px){
-	.faq h2{
+	.faq h2,
+	.qna h2{
 		margin-top: 120px;
 		font-size: 50px;color: #454545;text-align: center;
 	}
-	.faq .content-head{
+	.faq .content-head,
+	.qna .content-head{
 		margin-top: 70px;
 		overflow: hidden;
 	}
-	.event .content-head{
-		text-align: center;
-	}
-	.faq .content-head h3{
+	.faq .content-head h3,
+	.qna .content-head h3{
 		font-size: 32px;
 		text-align: center;
 	}
-	.faq .h3-comment{
+	.faq .h3-comment,
+	.qna .h3-comment{
+		display: block;
 		margin-top: 20px;
 		text-align: center;
-	}
-	.faq .h3-comment{
-		display: block;
 		font-size: 16px;
 	}
+	
 	.faq .content-row.first-row{
 		margin-top: 66px;
 	}
@@ -63,4 +75,61 @@
 		text-align: left;
 	}
 
+	.qna .row-comment{
+		float: right;
+		margin-bottom: 14px;
+		font-size: 15px;
+		color: #f00;
+	}
+	.qna .content-row.first-row{
+		margin-top: 124px;
+	}
+	.qna form{
+		clear: both;float: none;
+		padding-bottom: 100px;
+		border-top: 4px solid #454545;
+	}
+	.qna fieldset{
+		clear: both;overflow: hidden;
+		padding: 0 32px;
+		border-bottom: 1px solid #454545;
+	}
+	.qna fieldset input{
+		display: inline-block;
+		height: 36px;
+		border: 1px solid #d2d2d2;
+		border-radius: 4px;
+	}
+	.qna fieldset span{
+		display: block;float: left;
+		padding: 30px 0;
+		width: 50%;
+		text-align: left;
+	}
+	.qna fieldset label{
+		display: inline-block;
+		width: 20%;
+		color: #454545;font-size: 20px;text-align: left;
+	}
+	.qna textarea{
+		width: 80%;height: 222px;
+		border: 1px solid #d2d2d2;border-radius: 4px;
+	}
+	.qna .text-row span{
+		width: 100%;
+	}
+	.qna .text-row label{
+		float: left;
+		width: 10%;
+		height: 224px;
+		line-height: 224px;
+	}
+	.qna .btn-submit{
+		display: block;
+		margin: 72px auto 0;
+		width: 342px;padding: 22px 0 20px;
+		background: #31a8e0;text-align: center;
+		border-radius: 4px;color: #fff;
+		font-size: 20px;
+	}
 }
