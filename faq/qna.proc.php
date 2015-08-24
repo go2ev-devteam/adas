@@ -34,8 +34,9 @@ if(isset($_POST['submit']))
 
 		mail($to, $subject, $qna_post, $headers);
 
-		header('Location:'.$GP -> WEBROOT.'faq/qna.php');
+		header('Location:'.$GP -> WEBROOT.'faq/qna.end.php');
 	}
 	mysqli_close($dbc);
+	exit;
 }
 ?>
