@@ -44,6 +44,11 @@ include_once($GP -> INC.'doc.head.php');
 									<label for='tel_02' class='sr-only'>유선전화중간번호</label><input type='text' name='tel_03' id='tel_03' maxlength='4' style='width: 80px;'>
 								</span>
 							</fieldset>
+							<fieldset class='qna-tit-row'>
+								<span>
+									<label for='qna_tit'>제목</label><input type='text' name='qna_tit' id='qna_tit' class='qna-tit'>
+								</span>
+							</fieldset>
 							<fieldset class='text-row'>
 								<span>
 									<label for='qna_post'>내용</label>

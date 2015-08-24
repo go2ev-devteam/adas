@@ -111,6 +111,19 @@
 		width: 20%;
 		color: #454545;font-size: 20px;text-align: left;
 	}
+	.qna .qna-tit-row{
+		border: 0 none;
+	}
+	.qna .qna-tit-row span{
+		width: 100%;
+		padding: 30px 0 0;
+	}
+	.qna .qna-tit-row label{
+		width: 10%;
+	}
+	.qna .qna-tit{
+		width: 80%;
+	}
 	.qna textarea{
 		width: 80%;height: 222px;
 		border: 1px solid #d2d2d2;border-radius: 4px;

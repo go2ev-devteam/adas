@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'hyfont');
-define('DB_PW', 'hy0050');
-define('DB_NAME', 'fontbada_test');
+define('DB_USER', 'adas');
+define('DB_PW', '111111');
+define('DB_NAME', 'adas');
 define('LIST_NUM_FOR_PAGE', 10);
 
 class GlobalPath{};
