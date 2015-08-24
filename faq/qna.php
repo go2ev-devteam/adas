@@ -23,14 +23,14 @@ include_once($GP -> INC.'doc.head.php');
 				<div class='content-row first-row'>
 					<div class='gutter'>
 						<span class='row-comment'>* 표시는 필수 입력 사항입니다</span>
-						<form method='post' action='prog.qna.php'>
+						<form method='post' action='qna.proc.php'>
 							<fieldset>
 								<span><label for='u_name'>이 름</label><input type='text' name='u_name' id='u_name' style='width: 244px;'></span>
-								<span><label for='email'>이메일</label><input type='text' name='email' id='email' style='width: 244px;'></span>
+								<span><label for='u_email'>이메일</label><input type='text' name='u_email' id='u_email' style='width: 244px;'></span>
 							</fieldset>
 							<fieldset>
 								<span><label for='biz_name'>회사명</label><input type='text' name='biz_name' id='biz_name' style='width: 244px;'></span>
-								<span><label for='country'>국가</label><input type='text' name='country' id='country' style='width: 244px;'></span>
+								<span><label for='country_name'>국가</label><input type='text' name='country_name' id='country_name' style='width: 244px;'></span>
 							</fieldset>
 							<fieldset>
 								<span>
@@ -46,8 +46,8 @@ include_once($GP -> INC.'doc.head.php');
 							</fieldset>
 							<fieldset class='text-row'>
 								<span>
-									<label for='text'>내용</label>
-									<textarea>
+									<label for='qna_post'>내용</label>
+									<textarea name='qna_post' id='qna_post'>
 									</textarea>
 								</span>
 							</fieldset>

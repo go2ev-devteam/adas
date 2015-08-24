@@ -42,8 +42,8 @@
 	}
 	.faq .content-head h3,
 	.qna .content-head h3{
-		font-size: 32px;
 		text-align: center;
+		font-size: 24px;
 	}
 	.faq .h3-comment,
 	.qna .h3-comment{
@@ -67,7 +67,7 @@
 	}
 	.faq th,
 	.faq td{
-		padding: 32px 20px 23px;
+		padding: 32px 20px 28px;
 		font-size: 16px;line-height: 1.0;
 		text-align: center;
 	}

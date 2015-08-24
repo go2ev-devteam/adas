@@ -48,10 +48,17 @@ $(document).ready(function()
 	$dep1s.on('click', function()
 	{
 		var $this = $(this);
-		if($this.attr('isOpen')!='0')
+		if(isMobile)
 		{
-			window.location.href=$(this).attr('href');
-			return;
+			if($this.attr('isOpen')!='0')
+			{
+				window.location.href=$(this).attr('href');
+				return;
+			}
+		}
+		else
+		{
+			window.location.href=$this.attr('href');
 		}
 
 		if(isMobile && isOpenDep1)
