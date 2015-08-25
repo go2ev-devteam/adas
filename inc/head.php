@@ -54,9 +54,9 @@
 										</ul>
 									</li>
 									<li class='m6 dep1-row'>
-										<a href='<?php echo $GP -> WEBROOT;?>busi/partner.php' class='dep1' onclick='return false' isOpen='0'>BUSINESS<span class='deco-plus'></span></a>
+										<a href='<?php echo $GP -> WEBROOT;?>biz/partner.php' class='dep1' onclick='return false' isOpen='0'>BUSINESS<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
-											<li><a href='<?php echo $GP -> WEBROOT;?>busi/partner.php' class='dep2' onclick='return false'><cite></cite>영업 및 제휴문의<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>biz/partner.php' class='dep2' onclick='return false'><cite></cite>영업 및 제휴문의<span class='deco-arr'></span></a></li>
 										</ul>
 									</li>
 								</ul>

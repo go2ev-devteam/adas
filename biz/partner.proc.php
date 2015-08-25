@@ -11,8 +11,8 @@ if(isset($_POST['submit']))
 		{
 			if(preg_match('/tel_0\d/',$key)!=1)
 			{
-				echo '<script>alert("문의사항이 누락");</script>';
-				header('Location:'.$GP -> WEBROOT.'faq/qna.php');
+				echo '<script>alert("문의사항이 누락되었습니다");</script>';
+				header('Location:'.$GP -> WEBROOT.'biz/partner.php');
 				return;
 			}
 		}
@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
 
 		mail($to, $subject, $qna_post, $headers);
 
-		header('Location:'.$GP -> WEBROOT.'faq/qna.end.php');
+		header('Location:'.$GP -> WEBROOT.'biz/partner.end.php');
 	}
 	mysqli_close($dbc);
 	exit;
