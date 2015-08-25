@@ -39,20 +39,20 @@ include_once($GP -> INC.'doc.head.php');
 									<label for='mobile_03' class='sr-only'>핸드폰 세번째번호</label><input type='text' name='mobile_03' id='mobile_03' maxlength='4' style='width: 80px;'>
 								</span>
 								<span>
-									<label for='tel_01'>팩스</label><input type='text' name='tel_01' id='tel_01' maxlength='3' style='width: 80px;'> -
-									<label for='tel_02' class='sr-only'>팩스중간번호</label><input type='text' name='tel_02' id='tel_02' maxlength='4' style='width: 80px;'> -
-									<label for='tel_02' class='sr-only'>팩스마지막번호</label><input type='text' name='tel_03' id='tel_03' maxlength='4' style='width: 80px;'>
+									<label for='fax_01'>팩스</label><input type='text' name='fax_01' id='fax_01' maxlength='3' style='width: 80px;'> -
+									<label for='fax_02' class='sr-only'>팩스중간번호</label><input type='text' name='fax_02' id='fax_02' maxlength='4' style='width: 80px;'> -
+									<label for='fax_02' class='sr-only'>팩스마지막번호</label><input type='text' name='fax_03' id='fax_03' maxlength='4' style='width: 80px;'>
 								</span>
 							</fieldset>
 							<fieldset class='qna-tit-row'>
 								<span>
-									<label for='qna_tit'>제목</label><input type='text' name='qna_tit' id='qna_tit' class='qna-tit'>
+									<label for='biz_tit'>제목</label><input type='text' name='biz_tit' id='biz_tit' class='qna-tit'>
 								</span>
 							</fieldset>
 							<fieldset class='text-row'>
 								<span>
-									<label for='qna_post'>내용</label>
-									<textarea name='qna_post' id='qna_post'>
+									<label for='biz_post'>내용</label>
+									<textarea name='biz_post' id='biz_post'>
 									</textarea>
 								</span>
 							</fieldset>

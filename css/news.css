@@ -25,7 +25,7 @@
 }
 .event dt{
 	font-family: 'wHYGothic_A1_600';
-	background: url(../img/main/ir_icon.png) no-repeat -220px -40px;
+	background: url(../img/main/ir_icon.png) no-repeat -220px -37px;
 	padding-left: 47px;
 }
 
@@ -126,7 +126,7 @@
 	}
 	.event dt{
 		position: absolute;
-		left: 436px;top: 15px;
+		left: 436px;top: 10px;
 		font-size: 20px;
 	}
 	.event dl a{
@@ -141,10 +141,10 @@
 		margin-right: 32px;
 	}
 	.event .soon{
-		background-position:-220px -250px;
+		background-position:-220px -247px;
 	}
 	.event .prog{
-		background-position: -220px -280px;
+		background-position: -220px -277px;
 	}
 	.event .comment{
 		margin-top: 60px;

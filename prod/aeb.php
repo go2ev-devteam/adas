@@ -1,5 +1,5 @@
 <?php
-$page_title = '제휴 문의 접수 완료';
+$page_title = 'PRODUCT : AEB';
 include_once('../_init.php');
 include_once($GP -> INC.'doc.head.php');
 ?>
@@ -11,18 +11,18 @@ include_once($GP -> INC.'doc.head.php');
 		?>
 		<!--↑↑ Header ↑↑-->
 		<!--↓↓ Body & Content ↓↓-->
-		<div class='body qna qna-end' id='body'>
+		<div class='body' id='body' style='min-height: 600px;'>
 			<div class='contents' id='contents'>
-				<h2>영업 및 제휴 접수</h2>
 				<div class='content-head'>
 					<div class='gutter'>
-						<h3>접수되었습니다.</h3>
-						<span class='h3-comment'>빠른 시일내에 답변 드리도록 하겠습니다.</span>
+						<h2 style='text-align:center; margin-top: 200px;'>페이지 준비중입니다</h2>
 					</div>
 				</div>
 			</div>
+		<!--↑↑ Body & Content ↑↑-->
 		</div>
-		<?php include_once($GP -> INC.'foot.php'); ?>
+		<!--↓↓ Foot ↓↓-->
+		<?php include($GP -> INC.'foot.php'); ?>
 		<!--↑↑ Foot ↑↑-->
 	</div>
 </body>

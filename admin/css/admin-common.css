@@ -224,15 +224,33 @@
 }
 .pagination a{
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px 20px;
 	font-size: 16px;
+}
+.pagination .prev,
+.pagination .prev10,
+.pagination .next,
+.pagination .next10{
+	padding: 5px 10px;
+}
+.pagination .prev{
+	margin-right: 15px;
+}
+.pagination .prev10{
+	margin-right: 10px;
+}
+.pagination .next{
+	margin-left: 15px;
+}
+.pagination .next10{
+	margin-left: 10px;
 }
 .pagination a:hover{
 	text-decoration: underline;
 }
 .pagination a.current{
 	font-size: 18px;font-weight: bold;
-	text-decoration: underline;color: green;
+	text-decoration: underline;color: #00caee;
 }
 .pagination .btn-icon{
 	width: 10px;height: 20px;

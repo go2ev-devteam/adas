@@ -18,7 +18,7 @@ include_once($GP -> INC.'admindoc.head.php');
 						<div class='content-row'>
 							<form name='nse' action='add.post.php' method='post' class='nse-form'>
 								<label for='title'><input type='text' name='title' id='title' placeholder='제 목'></label>
-								<textarea name='ir1' id='ir1' class='edit-post'>alskdfja;lskjf;laskjf;lskjdf;l</textarea>
+								<textarea name='ir1' id='ir1' class='edit-post'></textarea>
 								<script type="text/javascript">
 								var oEditors = [];
 								nhn.husky.EZCreator.createInIFrame(

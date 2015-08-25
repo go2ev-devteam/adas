@@ -2,15 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', true);
 
-// define('DB_HOST', 'localhost');
-// define('DB_USER', 'root');
-// define('DB_PW', 'autoset');
-// define('DB_NAME', 'adas');
-// define('LIST_NUM_FOR_PAGE', 10);
-
 define('DB_HOST', 'localhost');
-define('DB_USER', 'hyfont');
-define('DB_PW', 'hy0050');
+define('DB_USER', 'adas');
+define('DB_PW', '111111');
 define('DB_NAME', 'adas');
 define('LIST_NUM_FOR_PAGE', 10);
 
@@ -24,5 +18,4 @@ $GP -> CSS     = $GP -> ROOT.'css/';
 $GP -> JS      = $GP -> ROOT.'js/';
 $GP -> HOST    = $_SERVER['HTTP_HOST'];
 $GP -> PAGESELF = $_SERVER['PHP_SELF'];
-
 ?>

@@ -1,8 +1,9 @@
 CREATE TABLE notice(
 `idx` INT NOT NULL AUTO_INCREMENT,
-`post_tit` TEXT NOT NULL,
-`post_content` LONGTEXT,
-`post_date` DATE,
+`notice_tit` TEXT NOT NULL,
+`notice_content` LONGTEXT,
+`notice_date` DATE,
+`read_cnt` BIGINT,
 PRIMARY KEY(`idx`)
 )ENGINE=INNODB;
 
@@ -29,23 +30,25 @@ CREATE TABLE faq(
 `faq_tit` TEXT NOT NULL,
 `faq_content` LONGTEXT,
 `faq_date` DATE,
+`read_cnt` BIGINT,
 PRIMARY KEY (`idx`)
 )ENGINE=INNODB;
 
-CREATE TABLE sales(
-`idx` INT NOT NULL AUTO_INCREMENT,
-`name` VARCHAR(4) NOT NULL,
-`email` VARCHAR(100) NOT NULL,
-`company` VARCHAR(100) NOT NULL,
-`nation` VARCHAR(32) NOT NULL,
-`mobile_1` CHAR(3) NOT NULL,
-`mobile_2` CHAR(4) NOT NULL,
-`mobile_3` CHAR(4) NOT NULL,
-`fax_1` VARCHAR(3),
-`fax_2` VARCHAR(4),
-`fax_3` CHAR(4),
-`sales_content` LONGTEXT,
-PRIMARY KEY(`idx`)
+CREATE TABLE biz(
+idx INT NOT NULL AUTO_INCREMENT,
+u_name VARCHAR(12) NOT NULL,
+u_email VARCHAR(100) NOT NULL,
+biz_name VARCHAR(120) NOT NULL,
+country_name VARCHAR(40) NOT NULL,
+mobile_01 CHAR(3) NOT NULL,
+mobile_02 VARCHAR(4) NOT NULL,
+mobile_03 CHAR(4) NOT NULL,
+fax_01 VARCHAR(3),
+fax_02 VARCHAR(4),
+fax_03 VARCHAR(4),
+biz_post LONGTEXT NOT NULL,
+`read_cnt` BIGINT,
+PRIMARY KEY(idx)
 )ENGINE=INNODB;
 
 CREATE TABLE qna(
@@ -61,5 +64,6 @@ tel_01 VARCHAR(3),
 tel_02 VARCHAR(4),
 tel_03 VARCHAR(4),
 qna_post LONGTEXT NOT NULL,
+`read_cnt` BIGINT,
 PRIMARY KEY(idx)
 )ENGINE=INNODB;
