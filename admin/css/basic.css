@@ -12,7 +12,7 @@ em, address{font-style: normal;}
 a:link{text-decoration: none;color: #666;}
 a:visited{text-decoration: none;color: #666;}
 /*a:hover{text-decoration: none;color: #666;}*/
-a:active{text-decoration: none;color: #666;}
+a:active{text-decoration: none;/*color: #666;*/}
 
 pre {
   display: block;
@@ -88,7 +88,9 @@ pre code {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
+.stop-scroll{
+  height: 100%;overflow: hidden;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;

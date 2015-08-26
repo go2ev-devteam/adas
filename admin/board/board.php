@@ -64,7 +64,7 @@ include_once($GP -> INC.'admindoc.head.php');
 											$row = mysqli_fetch_assoc($res);
 
 											$str.='<tr>';
-											$str.='<td><input type="checkbox" name="idx[]" value="'.$row['idx'].'"></td>';
+											$str.='<td><input type="checkbox" value="'.$row['idx'].'"></td>';
 											$str.='<td>'.$row['idx'].'</td>';
 											$str.='<td class="item-tit tal"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'&page='.$page.'">'.$row[$cate.'_tit'].'</td>';
 											$str.='<td>관리자</td>';
@@ -108,16 +108,68 @@ include_once($GP -> INC.'admindoc.head.php');
 								?>
 							</div>
 							<a href='<?php echo "write.php?cate=$cate"; ?>' class='btn write-link'>글쓰기</a>
-							<?php 
-							if(isset($idx) && !empty($idx))
+							<button id='btn_remove' class='btn btn-remove'>삭 제</button>
+							<!-- 삭제 팝업 관련 -->
+							<div class='pop-overlay' id='pop_overlay' style='display: none;'></div>
+							<div class='confirm-pop' id='confirm_pop' style='display: none;'>
+								<span>정말 삭제하시겠습니까?</span>
+								<button id='btn_remove_yes' class='btn btn-confirm'>확 인 </button><button id='btn_remove_no' class='btn btn-confirm'>취 소</button>
+							</div>
+							<!-- 삭제 팝업 관련끝 -->
+							<script type="text/javascript">
+							$(document).ready(function()
 							{
-								echo "<button onclick='remove.php?idx=$idx&cate=$cate&page=$page' role='button' class='btn btn-remove'>삭제</button>";
-							}
-							else
-							{
-								echo "<button onclick='remove.php?cate=$cate&page=$page' role='button' class='btn btn-remove'>삭제</button>";
-							}
-							?>
+								$('input[type="checkbox"]').attr('checked', false);
+								$('#btn_remove').click(function()
+								{
+									var $checked = $('input[type="checkbox"]:checked');
+									if($checked.length<=0)
+									{
+										alert('삭제할 항목을 선택하세요');
+									}
+									else
+									{
+										var $pop_overlay = $('#pop_overlay').show();
+										var $confirm_pop = $('#confirm_pop').show();
+										var $body = $('body').addClass('stop-scroll');
+
+										$('#btn_remove_yes').click(function()
+										{
+											$confirm_pop.hide();
+											$pop_overlay.hide();
+											$body.removeClass('stop-scroll');
+
+											var checkeds = $checked.map(function()
+											{
+												return $(this).val();
+											}).get().join(',');
+
+											var datas = 
+											{
+												page : <?php echo $page; ?>,
+												cate : '<?php echo $cate; ?>',
+												idxs : checkeds
+											}
+
+											$.post('remove.post.php', datas, function(result)
+											{
+												window.location.reload();
+											}).fail(function()
+											{
+												alert('Ajax Failed');
+											})
+										});
+
+										$('#btn_remove_no').click(function()
+										{
+											$confirm_pop.hide();
+											$pop_overlay.hide();
+											$body.removeClass('stop-scroll');
+										});
+									}
+								});
+							});
+							</script>
 						</div>
 					</div>
 				</div>

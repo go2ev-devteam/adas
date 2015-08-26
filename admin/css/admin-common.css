@@ -216,6 +216,38 @@
 .view .content-row{
 	text-align: left;
 }
+.pop-overlay{
+	position: fixed;left: 0;top: 0;
+	width: 100%;height: 100%;
+	background: #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-khtml-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+.confirm-pop{
+	position: fixed;left: 50%;top: 50%;
+	padding: 30px 0 35px;
+	width: 300px;
+	margin: -100px 0 0 -150px;
+	background: #fff;
+}
+.confirm-pop span{
+	display: block;
+	font-size: 16px;
+}
+.confirm-pop button{
+	margin-top: 20px;
+	padding: 5px 10px;
+	background-color: #ed9c28;
+	color: #fff;
+	border-color: #d58512;
+	font-size: 14px;
+}
+.confirm-pop #btn_remove_yes{
+	margin-right: 15px;
+}
 .pagination{
 	clear: both;
 	margin-top: 30px;padding: 5px 0;
