@@ -40,10 +40,10 @@
 									<li class='m4 dep1-row'>
 										<a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep1' onclick='return false' isOpen='0'>DOWNLOAD<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
-											<li><a href='<?php echo $GP -> WEBROOT;?>download/menual.php' class='dep2' onclick='return false'><cite></cite>사용자 메뉴얼<span class='deco-arr'></span></a></li>
-											<li><a href='<?php echo $GP -> WEBROOT;?>download/firmware.php' class='dep2' onclick='return false'><cite></cite>펌웨어<span class='deco-arr'></span></a></li>
-											<li><a href='<?php echo $GP -> WEBROOT;?>download/brochure.php' class='dep2' onclick='return false'><cite></cite>브로슈어<span class='deco-arr'></span></a></li>
-											<li><a href='<?php echo $GP -> WEBROOT;?>download/viewer.php' class='dep2' onclick='return false'><cite></cite>PC Viewer<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2' onclick='return false'><cite></cite>사용자 메뉴얼<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2' onclick='return false'><cite></cite>펌웨어<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2' onclick='return false'><cite></cite>브로슈어<span class='deco-arr'></span></a></li>
+											<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2' onclick='return false'><cite></cite>PC Viewer<span class='deco-arr'></span></a></li>
 										</ul>
 									</li>
 									<li class='m5 dep1-row'>

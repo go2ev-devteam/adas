@@ -13,6 +13,7 @@ CREATE TABLE news(
 `news_tit` TEXT NOT NULL,
 `news_content` LONGTEXT,
 `news_date` DATE,
+`read_cnt` BIGINT,
 PRIMARY KEY(`idx`)
 )ENGINE=INNODB;
 
@@ -65,5 +66,16 @@ tel_02 VARCHAR(4),
 tel_03 VARCHAR(4),
 qna_post LONGTEXT NOT NULL,
 `read_cnt` BIGINT,
+PRIMARY KEY(idx)
+)ENGINE=INNODB;
+
+CREATE TABLE `event`(
+idx INT NOT NULL AUTO_INCREMENT,
+event_tit VARCHAR(64) NOT NULL,
+event_lv CHAR(1) NOT NULL,
+event_time DATE NOT NULL,
+event_content TEXT NOT NULL,
+event_comment LONGTEXT NOT NULL,
+event_img VARCHAR(64) NOT NULL,
 PRIMARY KEY(idx)
 )ENGINE=INNODB;

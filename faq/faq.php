@@ -32,72 +32,71 @@ include_once($GP -> INC.'doc.head.php');
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>20</td>
-										<td class='list-tit'><a href=''>시스템 점검에 따른 온라인 쇼핑몰 사이트 이용 제한 안내</a></td>
-										<td class='reg-date'>2015-06-30</td>
-									</tr>
-									<tr>
-										<td>19</td>
-										<td class='list-tit'><a href=''>‘SM-100’ 출시 및 CES 2016 전시 참가 안내</a></td>
-										<td class='reg-date'>2015-06-19</td>
-									</tr>
-									<tr>
-										<td>18</td>
-										<td class='list-tit'><a href=''>모바일 신규 서비스 오픈 및 시스템 점검에 따른 일시 제한 안내</a></td>
-										<td class='reg-date'>2015-06-05</td>
-									</tr>
-									<tr>
-										<td>17</td>
-										<td class='list-tit'><a href=''>한양정보통신 임베디드 비전연구소 </a></td>
-										<td class='reg-date'>2015-05-21</td>
-									</tr>
-									<tr>
-										<td>16</td>
-										<td class='list-tit'><a href=''>시스템 점검에 따른 온라인 쇼핑몰 사이트 이용 제한 안내</a></td>
-										<td class='reg-date'>2015-06-30</td>
-									</tr>
-									<tr>
-										<td>15</td>
-										<td class='list-tit'><a href=''>‘SM-100’ 출시 및 CES 2016 전시 참가 안내</a></td>
-										<td class='reg-date'>2015-06-19</td>
-									</tr>
-									<tr>
-										<td>14</td>
-										<td class='list-tit'><a href=''>모바일 신규 서비스 오픈 및 시스템 점검에 따른 일시 제한 안내</a></td>
-										<td class='reg-date'>2015-05-10</td>
-									</tr>
-									<tr>
-										<td>13</td>
-										<td class='list-tit'><a href=''>이런저런 생각에 불러본 너 나올줄 몰랐어 간지러운 바람 웃고있는 우리 밤하늘의...</a></td>
-										<td class='reg-date'>2015-05-08</td>
-									</tr>
-									<tr>
-										<td>12</td>
-										<td class='list-tit'><a href=''>모바일 신규 서비스 오픈 및 시스템 점검에 따른 일시 제한 안내</a></td>
-										<td class='reg-date'>2015-06-05</td>
-									</tr>
-									<tr>
-										<td>11</td>
-										<td class='list-tit'><a href=''>2015년 4월 상품 변경 안내</a></td>
-										<td class='reg-date'>2015-04-30</td>
-									</tr>
+									<?php
+									include_once($GP -> INC.'dbconn.php');
+
+									if(isset($_GET['page']) && !empty($_GET['page']))
+									{
+										$page = $_GET['page'];
+									}
+									else
+									{
+										$page = 1;
+									}
+
+									$cate = 'faq';
+									$qry = "SELECT * FROM faq ORDER BY `idx` DESC";
+									$res = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
+									$str = '';
+
+									$page_range_start = ($page - 1) * LIST_NUM_FOR_PAGE;
+									$page_range_end = $page_range_start + LIST_NUM_FOR_PAGE;
+									for($i = $page_range_start; $i < $page_range_end; ++$i) 
+									{
+										if(mysqli_data_seek($res, $i))
+										{
+											$row = mysqli_fetch_assoc($res);
+
+											$str.='<tr>';
+											$str.='<td>'.$row['idx'].'</td>';
+											$str.='<td class="list-tit"><a href="view.php?idx='.$row['idx'].'&cate='.$cate.'&page='.$page.'">'.$row['faq_tit'].'</td>';
+											$str.='<td class="reg-date">'.$row['faq_date'].'</td>';
+											$str.='</tr>';
+										}
+									}
+									echo $str;
+									?>
 								</tbody>
 							</table>
 							<div class='pagination'>
-								<a href='' class='prev10 btn-icon'>10페이지 전으로</a>
-								<a href='' class='prev btn-icon'>이전 페이지로</a>
-								<a href='' class='current'>1</a>
-								<a href='' class=''>2</a>
-								<a href='' class=''>3</a>
-								<a href='' class=''>4</a>
-								<a href='' class=''>5</a>
-								<a href='' class=''>6</a>
-								<a href='' class=''>7</a>
-								<a href='' class=''>8</a>
-								<a href='' class=''>9</a>
-								<a href='' class='next btn-icon'>다음 페이지로</a>
-								<a href='' class='next10 btn-icon'>다음 10페이지</a>
+								<?php
+								$prev_page_num = $page - 1;
+								$prev10_page_num = $page - 10;
+								$prev_page_num = ($prev_page_num <= 0)? 1 : $prev_page_num;
+								$prev10_page_num = ($prev10_page_num <= 0)? 1 : $prev10_page_num;
+
+								echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$prev10_page_num.'" class="prev10 btn-icon" title="10페이지 이전으로">10페이지 이전으로</a>';
+								echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$prev_page_num.'" class="prev btn-icon" title="이전 페이지로">이전 페이지로</a>';
+
+								$total_row_len = 0;
+								if(mysqli_num_rows($res) > 0)
+								{
+									$total_row_len = mysqli_num_rows($res);
+								}
+								$page_len = ceil($total_row_len / LIST_NUM_FOR_PAGE);
+								for($i = 1;$i <= $page_len;++$i)
+								{
+									echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$i.'" class="'.(($page!=$i)? '':'current').'">'.$i.'</a>';
+								}
+								$next_page_num = $page + 1;
+								$next10_page_num = $page + 10;
+								$next_page_num = ($next_page_num >= $page_len)? $page_len : $next_page_num;
+								$next10_page_num = ($next10_page_num >= $page_len)? $page_len : $next10_page_num;
+
+								echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$next_page_num.'" class="next btn-icon" title="다음 목록 페이지로">다음 페이지로</a>';
+								echo '<a href="'.$GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$next10_page_num.'" class="next10 btn-icon" title="10페이지 다음으로">다음 10페이지로</a>';
+
+								?>
 							</div>
 						</div>
 					</div>

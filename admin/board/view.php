@@ -46,11 +46,58 @@ include_once($GP -> INC.'admindoc.head.php');
 						</div>
 					</div>
 					<div class='content-foot'>
-						<a href='<?php echo "remove.php?idx=$idx&cate=$cate&page=$page";?>' class='btn btn-remove'>삭 제</a>
+						<button id='btn_remove' id='btn_remove' class='btn btn-remove'>삭 제</button>
 						<a href='<?php echo "edit.php?idx=$idx&cate=$cate&page=$page";?>' class='btn btn-edit'>수정하기</a>
 						<a href='<?php echo "board.php?cate=$cate&page=$page";?>' class='btn btn-go-list'>목록으로</a>
 					</div>
+					<!-- 삭제 팝업 관련 -->
+					<div class='pop-overlay' id='pop_overlay' style='display: none;'></div>
+					<div class='confirm-pop' id='confirm_pop' style='display: none;'>
+						<span>정말 삭제하시겠습니까?</span>
+						<button id='btn_remove_yes' class='btn btn-confirm'>확 인 </button><button id='btn_remove_no' class='btn btn-confirm'>취 소</button>
+					</div>
+					<!-- 삭제 팝업 관련끝 -->
+					<script type="text/javascript">
+					$(document).ready(function()
+					{
+						$('#btn_remove').click(function()
+						{
+							var $pop_overlay = $('#pop_overlay').show();
+							var $confirm_pop = $('#confirm_pop').show();
+							var $body = $('body').addClass('stop-scroll');
 
+							$('#btn_remove_yes').click(function()
+							{
+								$confirm_pop.hide();
+								$pop_overlay.hide();
+								$body.removeClass('stop-scroll');
+
+								var datas = 
+								{
+									page : <?php echo $page; ?>,
+									cate : '<?php echo $cate; ?>',
+									idxs : <?php echo $idx; ?>
+								}
+
+								$.post('remove.post.php', datas, function(result)
+								{
+									var url = "<?php echo $GP -> WEBROOT.'board/board.php?cate='.$cate.'&page='.$page; ?>";
+									 window.location.href= url;
+								}).fail(function()
+								{
+									alert('Ajax Failed');
+								})
+							});
+
+							$('#btn_remove_no').click(function()
+							{
+								$confirm_pop.hide();
+								$pop_overlay.hide();
+								$body.removeClass('stop-scroll');
+							});
+						});
+					});
+					</script>
 				</div>
 			</div>
 		</div>
