@@ -17,16 +17,17 @@ if(isset($_GET['idx']) && !empty($_GET['idx']))
 		?>
 		<!--↑↑ Header ↑↑-->
 		<!--↓↓ Body & Content ↓↓-->
-		<div class='body faq view' id='body'>
+		<div class='body news view' id='body'>
 			<div class='contents' id='contents'>
-				<h2>FAQ</h2>
+				<h2>공지사항</h2>
 				<div class='content-head'>
 					<div class='gutter'>
-						<h3>자주 찾는 질문 TOP 20</h3>
-						<span class='h3-comment'>제품사용에 필요한 설치메뉴얼, PC뷰어, 어플리케이션 등을 다운받을 수 있습니다.<br />동영상 재생 관련 문제가 생겼을 시에는 FAQ를 확인하여 주세요. </span>
+						<!-- <h3>한양정보통신 제품에 관한 다양한 이벤트에 참여해 보세요.</h3> -->
+						<!-- <span class='h3-comment'>체험단, 할인, 공동구매 등의 다양한 이벤트에 참여해 보세요.<br />솔직한 후기와 제품소개를 통해 더 훌륭한 제품을 만들 수 있도록 함께 해주세요. </span> -->
 						<?php
 						include_once($GP -> INC.'dbconn.php');
 
+						$cate = 'notice';
 						$qry = "SELECT * FROM $cate WHERE `idx`='$idx'";
 						$result = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
 						if(mysqli_num_rows($result)>=1)
@@ -37,10 +38,12 @@ if(isset($_GET['idx']) && !empty($_GET['idx']))
 							$date = $row[$cate.'_date'];
 							$read_cnt = $row['read_cnt'];
 						}
+						if(is_null($read_cnt)) $read_cnt = 0;
 						?>
 					</div>
 				</div>
 				<div class='content-row first-row'>
+
 					<div class='gutter'>
 						<div class='row row-head'>
 							<h4><span class='row-idx'><?php echo $idx; ?></span><?php echo $tit; ?></h4>
@@ -60,7 +63,7 @@ if(isset($_GET['idx']) && !empty($_GET['idx']))
 								mysqli_close($dbc);
 							?>
 						</div>
-						<a href='<?php echo $GP -> WEBROOT."faq/faq.php?page=$page";?>' class='btn btn-go-list'>목록</a>
+						<a href='<?php echo $GP -> WEBROOT."news/notice.php?page=$page";?>' class='btn btn-go-list'>목록</a>
 					</div>
 				</div>
 			</div>

@@ -53,7 +53,6 @@ include_once($GP -> INC.'admindoc.head.php');
 									$qry = "SELECT * FROM $cate ORDER BY `idx` DESC";
 									$res = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
 									$str = '';
-									$row_tit = $cate.'_tit';
 
 									$page_range_start = ($page - 1) * LIST_NUM_FOR_PAGE;
 									$page_range_end = $page_range_start + LIST_NUM_FOR_PAGE;

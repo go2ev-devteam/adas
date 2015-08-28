@@ -357,6 +357,102 @@ table{
 	display: block;
 }
 @media(min-width: 320px){
+	.view{
+		padding-bottom: 160px;
+	}
+	.view h2{
+		margin-top: 120px;
+		font-size: 50px;color: #454545;text-align: center;
+	}
+	.view .content-head{
+		margin-top: 70px;
+		overflow: hidden;
+	}
+	.view .content-head h3{
+		text-align: center;
+		font-size: 24px;
+	}
+	.view .h3-comment{
+		display: block;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 16px;
+	}
+	.view .content-row.first-row{
+		margin-top: 66px;
+	}
+	.view .content-row .row{
+		padding-left: 86px;padding-right: 86px;
+	}
+	.view .row-head{
+		padding-top: 24px;
+		text-align: left;
+		border-top: 4px solid #454545;
+		/*border-bottom: 2px solid #454545;*/
+	}
+	.view .row-head h4{
+		height: 42px;
+	}
+	.view .row-head h4 span{
+		position: relative;
+		display: inline-block;
+		width: 85px;
+	}
+	.view .row-head h4 span:after{
+		position: absolute;top: 5px;left: 48px;
+		content: '';
+		display: inline-block;
+		/*margin-left: 32px;*/
+		width: 2px;height: 14px;
+		background: #454545;
+	}
+	.view .row-head-info{
+		padding-top: 11px;
+		height: 26px;overflow: hidden;
+		border-top: 1px solid #454545;
+	}
+	.view .row-head-info strong{
+		display: inline-block;
+	}
+	.view .row-head-info strong:after{
+		content: '';
+		display: inline-block;
+		margin-left: 10px;margin-right: 10px;
+		width: 2px;height: 10px;
+		background: #454545;
+	}
+	.view .row-head-info span{
+		float: left;
+		display: block;
+		font-size: 13px;
+		text-align: left;
+	}
+	.view .row-head-info span:first-child{
+		width: 294px;
+	}
+	.view .row-head-info span:first-child + span{
+		width: 400px;
+	}
+	.view .row-last{
+		border-bottom: 2px solid #454545;
+	}
+	.row-content{
+		padding: 46px 86px 154px;
+		min-height: 300px;
+		text-align: left;
+		border-bottom: 1px solid #454545;
+	}
+	
+	.view .row-head h4{
+		font-size: 18px;
+	}
+	.view .btn-go-list{
+		display: block;
+		background: url(../img/faq/btn_go_list.png)no-repeat left top;
+		margin: -45px auto 0;
+		width: 90px;height: 90px;
+		text-indent: -9999px;
+	}
 	.pagination{
 		clear: both;
 		margin-top: 30px;padding: 5px 0;

@@ -3,7 +3,7 @@ CREATE TABLE notice(
 `notice_tit` TEXT NOT NULL,
 `notice_content` LONGTEXT,
 `notice_date` DATE,
-`read_cnt` BIGINT,
+`read_cnt` BIGINT DEFAULT 0,
 PRIMARY KEY(`idx`)
 )ENGINE=INNODB;
 
@@ -31,7 +31,7 @@ CREATE TABLE faq(
 `faq_tit` TEXT NOT NULL,
 `faq_content` LONGTEXT,
 `faq_date` DATE,
-`read_cnt` BIGINT,
+`read_cnt` BIGINT DEFAULT 0,
 PRIMARY KEY (`idx`)
 )ENGINE=INNODB;
 
@@ -48,7 +48,7 @@ fax_01 VARCHAR(3),
 fax_02 VARCHAR(4),
 fax_03 VARCHAR(4),
 biz_post LONGTEXT NOT NULL,
-`read_cnt` BIGINT,
+`read_cnt` BIGINT DEFAULT 0,
 PRIMARY KEY(idx)
 )ENGINE=INNODB;
 
@@ -65,7 +65,7 @@ tel_01 VARCHAR(3),
 tel_02 VARCHAR(4),
 tel_03 VARCHAR(4),
 qna_post LONGTEXT NOT NULL,
-`read_cnt` BIGINT,
+`read_cnt` BIGINT DEFAULT 0,
 PRIMARY KEY(idx)
 )ENGINE=INNODB;
 
@@ -77,5 +77,6 @@ event_time DATE NOT NULL,
 event_content TEXT NOT NULL,
 event_comment LONGTEXT NOT NULL,
 event_img VARCHAR(64) NOT NULL,
+read_cnt BIGINT DEFAULT 0
 PRIMARY KEY(idx)
 )ENGINE=INNODB;
