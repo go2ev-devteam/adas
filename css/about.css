@@ -1,14 +1,261 @@
-.intro .top-wide-img{
-	display: block;
+/*회사소개 intro */
+.intro h2{
+	font-family: 'wHYGothic_A1_200';
+}
+.intro h2 span{
+	font-family: 'wHYGothic_A1_200';
+}
+.intro .h2-comment{
+	font-family: 'wHYGothic_A1_300';
+}
+.intro h3{
+	font-family: 'wHYGothic_A1_800';
+}
+.intro .h3-comment{
+	font-family: 'wHYGothic_A1_300';
+}
+.intro h4{
+	font-family: 'wHYGothic_A1_700'
+}
+.intro .h4-comment{
+	font-family: 'wHYGothic_A1_400';
+}
+.intro dt{
+	font-family: 'wHYGothic_A1_600';
+}
+.intro dd{
+	font-family: 'wHYGothic_A1_400';
+}
+.intro .content-head{
 	height: 1066px;
 	background:#000 url(../img/about/intro_head-fs8.png)no-repeat top center;
 }
 
-.adasone .top-wide-image{
+@media(min-width: 320px){
+	.intro.body{
+		padding-bottom: 130px;
+	}
+	h2{
+		padding-top: 640px;
+	}
+	h2,
+	h2 span{
+		display: block;
+		font-size: 38px;
+		color: #fff;
+	}
+	.h2-comment{
+		margin-top: 46px;
+		font-size: 14px;line-height: 24px;
+		color: #fff;
+	}
+	.intro h3{
+		font-size: 40px;
+		line-height: 37px;
+		color: #454545;
+	}
+	.h3-comment{
+		margin-top: 66px;
+		font-family: 16px;line-height: 30px;
+	}
+	.intro .first-row{
+		margin-top: 182px;
+	}
+	.intro .content-row{
+		margin-top: 90px;
+	}
+	.intro h3{
+		margin-top: 68px;
+	}
+	.intro dl{
+		position: relative;
+		float: left;
+		width: 33%;
+	}
+	.intro dl dt{
+		position: absolute;
+		top: 182px;
+	}
+	.intro dl dt,
+	.intro dl dd{
+		padding-right: 58px;
+	}
+	.intro dt{
+		font-size: 20px;
+	}
+	.intro dd{
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.intro dd img{
+		display: block;
+	}
+	.intro dd span{
+		display: block;
+		margin-top: 114px;
+	}
+	.intro .about-2{
+		margin-top: 98px;
+		background: url(../img/about/back_about-2.png) no-repeat right bottom 120px;
+	}
+	.intro h4{
+		margin-top: 100px;
+		font-size: 36px;line-height: 30px;
+		text-align: left;
+	}
+	.intro h4:first-child{
+		margin-top: 0px;
+	}
+	.intro .h4-comment{
+		margin-top: 18px;
+		font-size: 16px;line-height: 30px;text-align: left;
+	}
+}
+/*ADAS ONE */
+.adasone h2{
+	font-family: 'wHYGothic_A1_800';
+}
+.adasone .h2-comment{
+	font-family: 'wHYGothic_A1_400';
+}
+.adasone .h2-comment span{
+	font-family: 'wHYGothic_A1_800';
+}
+.adasone .content-head{
 	height: 490px;
-	background: #8f8f8f url(../img/about/adas_head-fs8.png)no-repeat top center;
+	background: #828282 url(../img/about/adas_head-fs8.png)no-repeat top center;
+}
+.adasone h3{
+	font-family: 'wHYGothic_A1_200';
+}
+.adasone h3 span{
+	font-family: 'wHYGothic_A1_600';
+}
+.adasone .h3-comment{
+	font-family: 'wHYGothic_A1_400';
 }
 
+.adasone .func h3 span{
+	font-family: 'wHYGothic_A1_400';
+}
+.adasone .func .big-text{
+	font-family: 'wHYGothic_A1_600';
+}
+.adasone .func h3 strong{
+	font-family: 'wHYGothic_A1_700';
+}
+.adasone .func dt{
+	font-family: 'wHYGothic_A1_600';
+}
+.adasone .func dd{
+	font-family: 'wHYGothic_A1_400';
+}
+.adasone .feat h3{
+	font-family: 'wHYGothic_A1_400';
+}
+.adasone .feat h3 strong{
+	font-family: 'wHYGothic_A1_700';
+}
+.adasone .feat .h3-comment{
+	font-family: 'wHYGothic_A1_400';
+}
+@media(min-width: 320px){
+	.adasone h2{
+		padding-top: 96px;
+		font-size: 52px;line-height: 62px;
+		color: #fff;text-align: center;
+	}
+	.adasone .h2-comment{
+		margin-top: 24px;
+		font-size: 25px;line-height: 1.2;
+		text-align: center;
+	}
+	.adasone .first-row{
+		margin-top: 162px;
+	}
+	.adasone .first-row h3{
+		line-height: 48px;
+		font-size: 36px;
+	}
+	.adasone .first-row h3 span{
+		display: block;
+		color: #5d5d5d;
+	}
+	.adasone .h3-comment{
+		margin-top: 60px;
+		font-size: 16px;line-height: 30px;
+		text-align: left;
+	}
+	.adasone .first-row img{
+		display: block;
+		margin-top: 90px;
+	}
+	.adasone .func h3{
+		font-size: 40px;
+	}
+	.adasone .func h3 .big-text{
+		color: #5d5d5d;font-size: 86px;
+	}
+	.adasone .func .big-text{
+		color: #5d5d5d;font-size: 86px;
+	}
+	.adasone .func h3 strong{
+		font-size: 40px;color: #454545;
+	}
+	.adasone .func{
+		margin-top: 230px;
+		overflow: hidden;
+	}
+	.adasone .func-row{
+		margin-right: -62px;
+	}
+	.adasone .func dl{
+		float: left;
+		position: relative;
+		margin-top: 88px;margin-right: 62px;
+		width: 480px;
+	}
+	.adasone .func dt{
+		position: absolute;top: 315px;
+		font-size: 41px;
+	}
+	.adasone .func dd img,
+	.adasone .func dd span{
+		display: block;
+		text-align: left;
+	}
+	.adasone .func dd span{
+		margin-top: 78px;
+		font-size: 15px;
+	}
+	.adasone .feat{
+		margin-top: 246px;
+	}
+	.adasone .feat h3{
+		margin-top: 37px;
+		font-size: 40px;
+	}
+	.adasone .feat h3:before{
+		content: '';
+		display: block;
+		margin: 0 auto 36px;
+		width: 240px;height: 2px;
+		background: #454545;
+	}
+	.adasone .feat .h3-comment{
+		margin-top: 62px;
+		font-size: 16px;line-height: 30px;
+	}
+	.adasone .feat img{
+		display: block;
+		margin-top: 62px;
+		width: 100%;
+	}
+	.adasone.body{
+		padding-bottom: 145px;
+	}
+
+}
 /* Tech */
 .tech .content-head h3{
 	font-family: 'wHYGothic_A1_200';font-weight: normal;

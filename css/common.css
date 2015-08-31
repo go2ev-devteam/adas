@@ -129,7 +129,7 @@ h1 a{
 	.head .menu-box{
 		clear: both;
 		position: relative;
-		top: 16px;
+		top: 15px;
 	}
 	.gnb{
 		float: none;position: absolute;width: 100%;
@@ -614,7 +614,9 @@ table{
 	.foot-body .gutter{
 		padding-top: 26px;	
 	}
-
+	.foot .dep1{
+		font-weight: bold;
+	}
 	.foot .location{
 		float: none;
 		margin-top: 6px;

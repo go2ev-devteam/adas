@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
 	$res = mysqli_query($dbc, $qry) or die('<p>Invalid Query '.mysqli_errno($dbc).' : '.mysqli_error($dbc).'</p>');
 	if($res)
 	{
-		$to = 'volca4@naver.com';
+		$to = 'adasone@hanyang.co.kr';
 		$charset = 'UTF-8';
 		$subject = "=?".$charset."?B?".base64_encode($biz_tit)."?=";
 		$from  = "=?".$charset."?B?".base64_encode($u_name)."?=<$u_email>\r\n";

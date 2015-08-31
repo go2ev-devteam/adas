@@ -9,52 +9,52 @@
 					<div class='menu-box' id='foot_menu_box'>
 						<ul class='foot-menu-01'>
 							<li class='m1 dep1-row'>
-								<a href='about/about.php' class='dep1'  title='Adas One'>COMPANY</a>
+								<a href='<?php echo $GP -> WEBROOT;?>about/intro.php' class='dep1'  title='Adas One'>COMPANY</a>
 								<ul class='dep2-group'>
-									<li><a href='about/intro.php' class='dep2'>회사소개</a></li>
-									<li><a href='about/about.php' class='dep2'>ADAS ONE</a></li>
-									<li><a href='about/tech.php' class='dep2'>주요 기술</a></li>
-									<li><a href='about/contact.php' class='dep2'>찾아 오시는 길</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>about/intro.php' class='dep2'>회사소개</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>about/adason.php' class='dep2'>ADAS ONE</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>about/tech.php' class='dep2'>주요 기술</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>about/contact.php' class='dep2'>찾아 오시는 길</a></li>
 								</ul>
 							</li>
 							<li class='m2 dep1-row'>
 								<a href='prod/sm-100.php' class='dep1'>PRODUCT</a>
 								<ul class='dep2-group'>
-									<li><a href='prod/sm-100.php' class='dep2'>SM-100</a></li>
-									<li><a href='prod/aeb.php' class='dep2'>AEB</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep2'>SM-100</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>prod/aeb.php' class='dep2'>AEB</a></li>
 								</ul>
 							</li>
 						</ul>
 						<ul class='foot-menu-02'>
 							<li class='m3 dep1-row'>
-								<a href='news/notice.php' class='dep1'>NEWS</a>
+								<a href='<?php echo $GP -> WEBROOT;?>news/notice.php' class='dep1'>NEWS</a>
 								<ul class='dep2-group'>
-									<li><a href='news/notice.php' class='dep2'>공지사항</a></li>
-									<li><a href='news/event.php' class='dep2'>이벤트</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>news/notice.php' class='dep2'>공지사항</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>news/event.php' class='dep2'>이벤트</a></li>
 								</ul>
 							</li>
 							<li class='m4 dep1-row'>
-								<a href='download/download.php' class='dep1'>DOWNLOAD</a>
+								<a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep1'>DOWNLOAD</a>
 								<ul class='dep2-group'>
-									<li><a href='download/menual.php' class='dep2'>사용자 메뉴얼</a></li>
-									<li><a href='download/firmware.php' class='dep2'>펌웨어</a></li>
-									<li><a href='download/brochure.php' class='dep2'>브로슈어</a></li>
-									<li><a href='download/viewer.php' class='dep2'>PC Viewer</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2'>사용자 메뉴얼</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2'>펌웨어</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2'>브로슈어</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>download/download.php' class='dep2'>PC Viewer</a></li>
 								</ul>
 							</li>
 						</ul>
 						<ul>
 							<li class='m5 dep1-row'>
-								<a href='community/faq.php' class='dep1'>FAQ</a>
+								<a href='faq/faq.php' class='dep1'>FAQ</a>
 								<ul class='dep2-group'>
-									<li><a href='community/faq.php' class='dep2'>FAQ</a></li>
-									<li><a href='community/qna.php' class='dep2'>Q&amp;A</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>faq/faq.php' class='dep2'>FAQ</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>faq/qna.php' class='dep2'>Q&amp;A</a></li>
 								</ul>
 							</li>
 							<li class='m6 dep1-row'>
 								<a href='busi/partner.php' class='dep1'>BUSINESS</a>
 								<ul class='dep2-group'>
-									<li><a href='busi/partner.php' class='dep2'>영업 및 제휴문의</a></li>
+									<li><a href='<?php echo $GP -> WEBROOT;?>biz/partner.php' class='dep2'>영업 및 제휴문의</a></li>
 								</ul>
 							</li>
 						</ul>

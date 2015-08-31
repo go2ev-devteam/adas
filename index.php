@@ -14,25 +14,40 @@ include($GP -> INC.'doc.head.php');
 		<div class='body main' id='body'>
 			<div class='contents' id='contents'>
 				<div class='content-head slider'>
-					<div class='slide-addit'>
-						<div class='ctrl-box'>
-							<button type='button' class='btn slide-ctrl-prev'>이전 슬라이드</button>
-							<button type='button' class='btn slide-ctrl-play'>슬라이드 재생</button>
-							<button type='button' class='btn slide-ctrl-next'>다음 슬라이드</button>
-						</div>
-						<div class='text-box'>
-							<dl>
-								<dt><span>WEB SITE</span> RENEWAL</dt>
-								<dd class='extra-text'><a href='#'>한양정보통신의 신규사업, ADAS ONE의 홈페이지가 오픈하였습니다.<br /> <strong>2015 CES  INNOVATION AWARDS</strong>를 수상한 <strong>SM-100</strong>의 혁신적인 기능을 직접 경험해 보세요.</a>
-								<dd class='link-box'><a href='#' class='go-link'>Go</a></dd>
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<ul>
-						<li class='slide-row slide-1'>
+					<ul id='slides' class='slides'>
+						<li class='slides-row slide-1'>
+						</li>
+						<li class='slides-row slide-2'>
+						</li>
+						<li class='slides-row slide-3'>
 						</li>
 					</ul>
+					<div class='gutter'>
+						<div class='slide-addit'>
+							<div class='ctrl-box' id='ctrl_box'>
+								<button type='button' class='btn slide-prev'>이전 슬라이드</button>
+								<button type='button' class='btn slide-play'>슬라이드 재생</button>
+								<button type='button' class='btn slide-next'>다음 슬라이드</button>
+							</div>
+							<div class='text-box'>
+								<dl>
+									<dt>CES 2015 <br />Innovation awards</dt>
+									<dd class='extra-text'><a href='#'>당사의 SM-100 제품으로 참가한 2015년 1월 미국 라스베가스 CES 에서 <strong>2015 CES  INNOVATION AWARDS</strong>를 수상하였습니다.</a>
+									<dd class='link-box'><a href='#' class='go-link'>Go</a></dd>
+								</dl>
+								<dl>
+									<dt>IoT Technology</dt>
+									<dd class='extra-text'><a href='#'>Another technology is IoT which is based on closely associated machine-to-machine (M2M) communication products in manufacturing and power, oil and gas utilities..</a>
+									<dd class='link-box'><a href='#' class='go-link'>Go</a></dd>
+								</dl>
+								<dl>
+									<dt>Car DVR Technology</dt>
+									<dd class='extra-text'><a href='#'>Hanyang offers a Car DVR, a portable Car Digital Video Recorder with wide angle lens that captures high definition video and displays them on LCD.</a>
+									<dd class='link-box'><a href='#' class='go-link'>Go</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class='content-row feat'>
 						<div class='gutter'>
@@ -149,5 +164,124 @@ include($GP -> INC.'doc.head.php');
 		<?php include($GP -> INC.'foot.php'); ?>
 		<!--↑↑ Foot ↑↑-->
 	</div>
+	<script type="text/javascript" src='js/gsap/TweenMax.min.js'></script>
+	<script type="text/javascript" src='js/blurjs/jquery.foggy.min.js'></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		var W_1024 = 1054;
+		var W_998 = 998;
+		var W_640 = 640;
+		var W_320 = 320;
+
+		var $win = $(window);
+		var $slides = $('#slides');
+		var $slides_addit = $('.slide-addit');
+		var $slides_row = $('.slides-row');
+		var slide_len = $slides_row.length;
+
+		function init()
+		{
+			var w = $win.width();
+			var h = $win.height();
+
+			$slides_row.css('left', w+'px');
+			$slides_row.eq(0).css('left',0);
+			// if(w>=W_320 && w<W_1054)
+			// {
+			// 	var addit_h = $slides_addit.height();
+			// 	var slide_h = $slides_row.height();
+			// 	$slide_rows.height(addit_h + slide_h);
+			// }
+			// else
+			// {
+			// 	$slide_rows.removeAttr('style')
+			// }
+		}
+
+			
+		var $option_texts = $('.text-box').find('dl');
+
+		var $btn_next = $('.slide-next');
+		var $btn_prev = $('.slide-prev');
+		var $btn_play = $('.slide-play');
+
+		var cnt = 0;
+		var $cur = $slides_row.eq(0);
+		var $prev = $slides_row.eq(0);
+		var $next = $slides_row.eq(1);
+		var duration = 1.1;
+		var inter;
+
+		$btn_next.click(function()
+		{
+			clearInterval(inter);
+
+			$prev = $slides_row.eq(cnt);
+			var	$prev_text = $option_texts.eq(cnt)
+
+			cnt++;
+			cnt = (cnt>=slide_len)? 0 : cnt;
+			$next = $slides_row.eq(cnt);
+			var $next_text = $option_texts.eq(cnt);
+
+			TweenMax.to($prev, duration, {left: '-100%', startAt:{left:0}, ease:Expo.easeInOut});
+			TweenMax.to($next, duration, {left: '0', startAt:{left:'100%'}, ease:Expo.easeInOut});
+
+			TweenMax.to($prev_text, duration, {opacity: 0});
+			TweenMax.to($next_text, duration, {opacity: 1, startAt:{opacity: 0}});
+		});
+
+		$btn_prev.click(function()
+		{
+			clearInterval(inter);
+
+			$prev = $slides_row.eq(cnt);
+			var $prev_text = $option_texts.eq(cnt);
+
+			cnt--;
+			cnt = (cnt <= 0)? slide_len-1 : cnt;
+			$next = $slides_row.eq(cnt);
+			var $next_text = $option_texts.eq(cnt);
+
+			TweenMax.to($prev, duration, {left: '100%', startAt:{left: 0}, ease:Expo.easeInOut});
+			TweenMax.to($next, duration, {left: 0, startAt:{left:'-100%'}, ease:Expo.easeInOut});
+
+			TweenMax.to($prev_text, duration, {opacity: 0});
+			TweenMax.to($next_text, duration, {opacity: 1, startAt:{opacity: 0}});
+		});
+
+
+		$btn_play.on('click', function()
+		{
+			inter = setInterval(function()
+			{
+				return;
+				$prev = $slides_row.eq(cnt);
+				var	$prev_text = $option_texts.eq(cnt)
+
+				cnt++;
+				cnt = (cnt>=slide_len)? 0 : cnt;
+				$next = $slides_row.eq(cnt);
+				var $next_text = $option_texts.eq(cnt);
+
+				TweenMax.to($prev, duration, {left: '-100%', startAt:{left:0}, ease:Expo.easeInOut});
+				TweenMax.to($next, duration, {left: '0', startAt:{left:'100%'}, ease:Expo.easeInOut});
+
+				TweenMax.to($prev_text, duration, {opacity: 0});
+				TweenMax.to($next_text, duration, {opacity: 1, startAt:{opacity: 0}});
+			}, 3000)
+		}).trigger('click');
+
+
+
+		
+		$win.resize(function()
+		{
+			init();
+		})
+		init();
+	});
+	</script>
 </body>
 </html>
