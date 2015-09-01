@@ -110,9 +110,61 @@ include_once($GP -> INC.'doc.head.php');
 					</ul>
 				</div>
 				<div class='content-row specs'>
-					<span class='prod-deco-1'></span>
-					<h3>TECH SPECS</h3>
-					<img src='../img/prod/sm100_img_07-fs8.png' alt='TECH SPECS'>
+					<div class='gutter'>
+						<span class='prod-deco-1'></span>
+						<h3>TECH SPECS</h3>
+						<img src='../img/prod/sm100_img_07-fs8.png' alt='TECH SPECS'>
+						<div class='spec-comments'>
+							<span><strong>컬러</strong>BLACK &amp; WHITE</span>
+							<span><strong>구성품</strong>본체, 후방카메라, 제품거치대(전방), 메모리카드(어댑터 포함), 후방카메라 연결케이블, OBDII 연결케이블, 메뉴얼</span>
+						</div>
+					</div>
+				</div>
+				<div class='content-row spec-tables'>
+					<div class='gutter'>
+						<table>
+							<colgroup>
+								<col style='wdith:25%;'><col style='width:25%;'>
+								<col style='width: 50%;'>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope='col' colspan='2'>ITEM</th>
+									<th scope='col'>SPECIFICATION</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td colspan='2'>CPU</td><td>ARM Cortex-A9 Quad core</td></tr>
+								<tr><td colspan='2'>RAM</td><td>DDR3 4Gb X 2</td></tr>
+								<tr><td colspan='2'>G-Sensor &amp; eCompass</td><td>6axis, ±2G, ±1300uT</td></tr>
+								<tr><td colspan='2'>Storage Capacity></td><td>SD Card 16GB ~ 32GB</td></tr>
+								<tr><td rowspan='2'>Lens Viewing Angle</td><td>Front</td><td>134˚, F2.0, 40cm ~ ∞</td></tr>
+								<tr><td>Rear</td><td>121˚, F2.0, 40cm ~ ∞</td></tr>
+								<tr><td rowspan='2'>Camera</td><td>Front</td><td>2.0M Pixel, 1/3″ CMOS</td></tr>
+								<tr><td>Rear</td><td>1.0M Pixel, 1/3″ CMOS</td></tr>
+								<tr><td rowspan='2'>Resolutio><td>Front</td><td>FHD 1920 X 1080</td></tr>
+								<tr><td>Rear</td><td>HD 1280 X 720</td></tr>
+								<tr><td rowspan='2'>Frame Rate</td><td>Front</td><td>1080 30fps</td></tr>
+								<tr><td>Rear</td><td>720 20fps</td></tr>
+								<tr><td rowspan='2'>Port</td><td>OBD</td><td>DC 8~33V(Power consumption: 7w), OBD II Protocol</td></tr>
+								<tr><td>2CH IN</td><td>STP, Micro USB</td></tr>
+								<tr><td rowspan='3'>Status Indication LED</td><td>Security</td><td>Blue LED X 4ea</td></tr>
+								<tr><td>Power</td><td>Red LED X 1ea</td></tr>
+								<tr><td>Network LED</td><td>Blue LED X 1ea</td></tr>
+								<tr><td colspan='2'>MIC</td><td>Built-in X 2</td></tr>
+								<tr><td colspan='2'>Voice Announcement Output</td><td>Speaker, Built-in</td></tr>
+								<tr><td colspan='2'>Backup Battery</td><td>Super CAP</td></tr>
+								<tr><td rowspan='2'>LCD</td><td>Display</td><td>4: IPS 800 X 480</td></tr>
+								<tr><td>Touch</td><td>4-wire Analog Resistive</td></tr>
+								<tr><td colspan='2'>Compression Code/Format</td><td>H.264 / mp4</td></tr>
+								<tr><td colspan='2'>RTC ( Real Time Clock )</td><td>Built-in ( GPS Backup )</td></tr>
+								<tr><td rowspan='3'>REC</td><td>Rec.Mode</td><td>Normal, Event, Manual, Parking</td></tr>
+								<tr><td>Parking Mode</td><td>Motion detect + G-Sensor</td></tr>
+								<tr><td>Network LED</td><td>30s duration ( from 10s before until 20s after motion or shock )</td></tr>
+								<tr><td colspan='2'>Operation Temp</td><td> -20℃ ~ 60℃ </td></tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		<!--↑↑ Body & Content ↑↑-->

@@ -23,7 +23,7 @@ include($GP -> INC.'doc.head.php');
 						</li>
 					</ul>
 					<div class='gutter'>
-						<div class='slide-addit'>
+						<div class='slide-addon'>
 							<div class='ctrl-box' id='ctrl_box'>
 								<button type='button' class='btn slide-prev'>이전 슬라이드</button>
 								<button type='button' class='btn slide-play'>슬라이드 재생</button>
@@ -176,30 +176,10 @@ include($GP -> INC.'doc.head.php');
 
 		var $win = $(window);
 		var $slides = $('#slides');
-		var $slides_addit = $('.slide-addit');
+		var $slides_addit = $('.slide-addon');
 		var $slides_row = $('.slides-row');
 		var slide_len = $slides_row.length;
 
-		function init()
-		{
-			var w = $win.width();
-			var h = $win.height();
-
-			$slides_row.css('left', w+'px');
-			$slides_row.eq(0).css('left',0);
-			// if(w>=W_320 && w<W_1054)
-			// {
-			// 	var addit_h = $slides_addit.height();
-			// 	var slide_h = $slides_row.height();
-			// 	$slide_rows.height(addit_h + slide_h);
-			// }
-			// else
-			// {
-			// 	$slide_rows.removeAttr('style')
-			// }
-		}
-
-			
 		var $option_texts = $('.text-box').find('dl');
 
 		var $btn_next = $('.slide-next');
@@ -213,7 +193,22 @@ include($GP -> INC.'doc.head.php');
 		var duration = 1.1;
 		var inter;
 
-		$btn_next.click(function()
+		var init = function()
+		{
+			var w = $win.width();
+
+			// $slides_row.css('left', w+'px');
+			// $slides_row.eq(0).css('left',0);
+		}();
+
+		function resizeHandler()
+		{
+			var w = $win.width();
+			var h = $win.height();
+		}
+
+
+		$btn_next.on('click', function()
 		{
 			clearInterval(inter);
 
@@ -226,13 +221,13 @@ include($GP -> INC.'doc.head.php');
 			var $next_text = $option_texts.eq(cnt);
 
 			TweenMax.to($prev, duration, {left: '-100%', startAt:{left:0}, ease:Expo.easeInOut});
-			TweenMax.to($next, duration, {left: '0', startAt:{left:'100%'}, ease:Expo.easeInOut});
+			TweenMax.to($next, duration, {left: 0, startAt:{left:'100%'}, ease:Expo.easeInOut});
 
 			TweenMax.to($prev_text, duration, {opacity: 0});
 			TweenMax.to($next_text, duration, {opacity: 1, startAt:{opacity: 0}});
 		});
 
-		$btn_prev.click(function()
+		$btn_prev.on('click', function()
 		{
 			clearInterval(inter);
 
@@ -273,14 +268,11 @@ include($GP -> INC.'doc.head.php');
 			}, 3000)
 		}).trigger('click');
 
-
-
 		
 		$win.resize(function()
 		{
-			init();
+			resizeHandler();
 		})
-		init();
 	});
 	</script>
 </body>

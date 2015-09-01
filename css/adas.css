@@ -5,7 +5,7 @@
 .slider .gutter{
 	position: relative;
 }
-.slide-addit{
+.slide-addon{
 	position: absolute;
 	bottom: 0;right: 0;z-index: 100;
 	overflow: hidden;
@@ -60,11 +60,29 @@
 	background-position:-50px 0;text-indent: -8888px;
 }
 @media(min-width: 320px){
-	.slide-addit{
+	.content-head .gutter{
+		height: 570px;
+	}
+	.slide-addon{
+		left: 0;bottom: 0;
 		width: 100%;
 	}
-	#slide_rows{
-		height: 254px;
+	.slides{
+		position: relative;
+	}
+	.slides li:first-child{
+		left: 0;
+	}
+	.slides li{
+		position: absolute;top: 0;left: 100%;
+		background: url(../img/main/head_slide_01_1024.png) no-repeat center center;
+		height: 570px;width: 100%;
+	}
+	.slides .slide-2{
+		background: url(../img/main/head_slide_02_1024.png) no-repeat center center;
+	}
+	.slides .slide-3{
+		background: url(../img/main/head_slide_03_1024.png) no-repeat center center;
 	}
 	.ctrl-box{
 		float: none;
@@ -110,12 +128,6 @@
 	}
 }
 @media(min-width: 640px){	
-	.slide-addit{
-		width: 100%;
-	}
-	#slide_rows{
-		height: 394px;
-	}
 	.ctrl-box{
 		float: left;
 		width: 37%;height: 30px;padding-top: 3px;
@@ -161,31 +173,11 @@
 
 }
 @media(min-width: 998px){
-	.content-head .gutter{
-		height: 570px;
-	}
-	.slide-addit{
-		left: 50%;bottom: 0;
-		margin-left: 94px;width: 378px;
-	}
-	.slides{
-		position: relative;
-	}
-	.slides li{
-		position: absolute;top: 0;
-		background: url(../img/main/head_slide_01-fs8.png) no-repeat center center;
-		height: 570px;width: 100%;
-	}
-	.slides .slide-2{
-		background: url(../img/main/head_slide_02-fs8.png) no-repeat center center;
-	}
-	.slides .slide-3{
-		background: url(../img/main/head_slide_03-fs8.png) no-repeat center center;
-	}
+	
 }
 
-@media(min-width: 1024px){
-	.slide-addit{
+@media(min-width: 1280px){
+	.slide-addon{
 		left: 50%;margin-left: 94px;
 		width: 378px;
 	}
@@ -194,14 +186,14 @@
 	}
 	.slides li{
 		position: absolute;top: 0;
-		background: url(../img/main/head_slide_01-fs8.png) no-repeat center center;
+		background: url(../img/main/head_slide_01_2000.png) no-repeat center center;
 		height: 570px;width: 100%;
 	}
 	.slides .slide-2{
-		background-image: url(../img/main/head_slide_02-fs8.png) no-repeat center center;
+		background-image: url(../img/main/head_slide_02_2000.png);
 	}
 	.slides .slide-3{
-		background-image: url(../img/main/head_slide_03-fs8.png) no-repeat center center;
+		background-image: url(../img/main/head_slide_03_2000.png);
 	}
 	.ctrl-box{
 		float: none;

@@ -15,6 +15,9 @@
 <script src='<?php echo $GP -> WEBROOT;?>js/respond.min.js'></script>
 <script src='<?php echo $GP -> WEBROOT;?>js/common.js' type="text/javascript"></script>
 <script id="TypeEngine" type='text/javascript' src='<?php echo $GP -> WEBROOT ?>js/hy-1.1.js?client_c=4937128194'></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
 <?php
 $path_parts = pathinfo($_SERVER['PHP_SELF']);

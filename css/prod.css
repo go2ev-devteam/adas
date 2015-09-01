@@ -25,6 +25,9 @@
 .sm100 .content-row{
 	overflow: hidden;
 }
+.sm100 .spec-comments{
+	font-family: 'wHYGothic_A1_400';
+}
 @media(min-width: 320px){
 	.sm100 .content-head{
 		height: 651px;
@@ -125,5 +128,39 @@
 	}
 	.sm100 .specs img{
 		margin-top: 104px;
+	}
+	.sm100 .spec-comments span{
+		display: block;
+		text-align: left;
+	}
+	.sm100 .spec-comments span:first-child{
+		margin-top: 76px;
+	}
+	.sm100 .spec-tables{
+		margin-top: 170px;
+	}
+	.sm100 .spec-tables table{
+		border-left: 1px solid #989898;
+	}
+	.sm100 .spec-tables th{
+		background: #434444;
+		color: #fff
+	}
+	.sm100 .spec-tables th{
+		padding: 12px 0;
+	}
+	.sm100 .spec-tables td{
+		padding: 8px 0;
+	}
+	.sm100 .spec-tables tr{
+		border-bottom: 1px solid #989898;
+	}
+	.sm100 .spec-tables thead th,
+	.sm100 .spec-tables td{
+		border-right: 1px solid #989898;
+	}
+	.sm100 .spec-tables tr td:last-child{
+		text-align: left;
+		padding-left: 24px;
 	}
 }

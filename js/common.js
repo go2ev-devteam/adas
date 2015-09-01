@@ -105,7 +105,7 @@ $(document).ready(function()
 			}
 		}
 	}
-	var W_1054 = 1054;
+	var W_1280 = 1280;
 	var W_998 = 998;
 	var W_640 = 640;
 	var W_320 = 320;
@@ -113,13 +113,13 @@ $(document).ready(function()
 	function setPosition()
 	{
 		var w = $win.width();
-		if(w >= W_1054)
+		if(w >= W_1280)
 		{
 			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(false, [$btn_book]);
 			isMobile = false;
 		}
-		else if(w < W_1054 && w >= W_998)
+		else if(w < W_1280 && w >= W_998)
 		{
 			visible(true, [$menu_box, $select_lang, $foot_menu_box]);
 			visible(false, [$btn_book, $('.extra-text')]);

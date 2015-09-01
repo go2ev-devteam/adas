@@ -4,13 +4,13 @@
 						<h1><a href='<?php echo $GP -> WEBROOT;?>'>ADAS ONE</a></h1>
 						<button type='button' class='btn-book sr-only' id='btn_book' title='메뉴 펼침'>gnb 펼침 버튼</button>
 						<ul class='select-lang' id='select_lang'>
-							<li><a href='index.php'>언어 선택 - 한국어 </a></li>
-							<li><a href='index.en.php' class='lang-en'>Select Language - English </a></li>
+							<li><a href='<?php echo $GP -> WEBROOT;?>index.php'>언어 선택 - 한국어 </a></li>
+							<li><a href='<?php echo $GP -> WEBROOT;?>index.en.php' class='lang-en'>Select Language - English </a></li>
 						</ul>
 						<div class='menu-box' id='menu_box'>
 							<div class='menu-box-tit sr-only' id='menu_box_tit'>
 								<p>제품 사용에 필요한 소프트웨어를 다운받기 원하신다면?</p>
-								<a href='download/download.php'>DOWNLOAD<br />CENTER</a>
+								<a href='<?php echo $GP -> WEBROOT;?>download/download.php'>DOWNLOAD<br />CENTER</a>
 							</div>
 							<div class='menu-bg active' id='menu_bg'></div>
 								<ul class='gnb' id='gnb'>
@@ -24,7 +24,7 @@
 										</ul>
 									</li>
 									<li class='m2 dep1-row'>
-										<a href='prod/sm-100.php' class='dep1' onclick='return false' isOpen='0'>PRODUCT<span class='deco-plus'></span></a>
+										<a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep1' onclick='return false' isOpen='0'>PRODUCT<span class='deco-plus'></span></a>
 										<ul class='dep2-group sr-only'>
 											<li><a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep2' onclick='return false'><cite></cite>SM-100<span class='deco-arr'></span></a></li>
 											<li><a href='<?php echo $GP -> WEBROOT;?>prod/aeb.php' class='dep2' onclick='return false'><cite></cite>AEB<span class='deco-arr'></span></a></li>

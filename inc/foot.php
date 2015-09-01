@@ -18,7 +18,7 @@
 								</ul>
 							</li>
 							<li class='m2 dep1-row'>
-								<a href='prod/sm-100.php' class='dep1'>PRODUCT</a>
+								<a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep1'>PRODUCT</a>
 								<ul class='dep2-group'>
 									<li><a href='<?php echo $GP -> WEBROOT;?>prod/sm100.php' class='dep2'>SM-100</a></li>
 									<li><a href='<?php echo $GP -> WEBROOT;?>prod/aeb.php' class='dep2'>AEB</a></li>
@@ -45,14 +45,14 @@
 						</ul>
 						<ul>
 							<li class='m5 dep1-row'>
-								<a href='faq/faq.php' class='dep1'>FAQ</a>
+								<a href='<?php echo $GP -> WEBROOT;?>faq/faq.php' class='dep1'>FAQ</a>
 								<ul class='dep2-group'>
 									<li><a href='<?php echo $GP -> WEBROOT;?>faq/faq.php' class='dep2'>FAQ</a></li>
 									<li><a href='<?php echo $GP -> WEBROOT;?>faq/qna.php' class='dep2'>Q&amp;A</a></li>
 								</ul>
 							</li>
 							<li class='m6 dep1-row'>
-								<a href='busi/partner.php' class='dep1'>BUSINESS</a>
+								<a href='<?php echo $GP -> WEBROOT;?>biz/partner.php' class='dep1'>BUSINESS</a>
 								<ul class='dep2-group'>
 									<li><a href='<?php echo $GP -> WEBROOT;?>biz/partner.php' class='dep2'>영업 및 제휴문의</a></li>
 								</ul>
