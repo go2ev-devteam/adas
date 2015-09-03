@@ -20,22 +20,19 @@
 <![endif]-->
 
 <?php
-$path_parts = pathinfo($_SERVER['PHP_SELF']);
-$dir = $path_parts['dirname'];
-preg_match('/\/[\d\w]+$/', $dir, $matches);
-$filename = str_replace('/','',$matches[0]);
+$filename = $GP -> getDirName();
 
 $css_file = $filename.'.css';
 $js_file = $filename.'.js';
 
 if(is_file($GP -> CSS.$css_file) && file_exists($GP -> CSS.$css_file) && filesize($GP -> CSS.$css_file)> 0)
 {
-	echo '<link rel="stylesheet" href="'.$GP -> WEBROOT.'css/'.$css_file.'">';
+	echo '<link rel="stylesheet" href="'.$GP -> WEB_CSS.$css_file.'">';
 }
 
 if(is_file($GP -> JS.$js_file) && file_exists($GP -> JS.$js_file) && filesize($GP -> JS.$js_file)> 0)
 {
-	echo '<script type="text/javascript" src="'.$GP -> WEBROOT.'js/'.$js_file.'"></script>';
+	echo '<script type="text/javascript" src="'.$GP -> WEB_JS.$js_file.'"></script>';
 }
 ?>
 <title><?php echo $page_title; ?></title>

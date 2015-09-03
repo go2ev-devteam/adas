@@ -8,14 +8,46 @@ define('DB_PW', '111111');
 define('DB_NAME', 'adas');
 define('LIST_NUM_FOR_PAGE', 10);
 
-class GlobalPath{};
-$GP = new GlobalPath();
-$GP -> ROOT    = $_DIR_ROOT.'/';
-$GP -> WEBROOT = $_WEB_ROOT;
-$GP -> INC     = $GP -> ROOT .'inc/';
-$GP -> FUNC    = $GP -> ROOT.'func/';
-$GP -> CSS     = $GP -> ROOT.'css/';
-$GP -> JS      = $GP -> ROOT.'js/';
-$GP -> HOST    = $_SERVER['HTTP_HOST'];
-$GP -> PAGESELF = $_SERVER['PHP_SELF'];
+class GlobalPath
+{
+	public $ROOT;
+	public $INC;
+	public $CSS;
+	public $JS;
+	public $FUNC;
+	public $HOST;
+	public $WEBROOT;
+	public $WEB_CSS;
+	public $WEB_JS;
+	public $PAGE_SELF;
+
+	function __construct($root, $webroot)
+	{
+		$this -> ROOT      = $root.'/';
+		$this -> INC       = $this -> ROOT.'inc/';
+		$this -> CSS       = $this -> ROOT.'css/';
+		$this -> JS        = $this -> ROOT.'js/';
+		$this -> FUNC      = $this -> ROOT.'func/';
+		$this -> WEBROOT   = $webroot;
+		$this -> WEB_CSS   = $this -> WEBROOT.'css/';
+		$this -> WEB_JS    = $this -> WEBROOT.'js/';
+		$this -> PAGE_SELF = $_SERVER['PHP_SELF'];
+	}
+	public function getFileName()
+	{
+		$name = $this -> PAGE_SELF;
+		preg_match('/(\w.+)(\.[^.]*)$/', $name, $maches);
+		$name = $maches[1];
+
+		return $name;
+	}
+	public function getDirName()
+	{
+		$name = $this -> PAGE_SELF;
+		$dir = dirname($name);
+		preg_match('/(?<=\/)[\w.]+$/', $dir, $matches);
+
+		return $matches[0];
+	}
+};
 ?>

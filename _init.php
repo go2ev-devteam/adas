@@ -9,4 +9,5 @@ $_WEB_ROOT = '/'.array_shift($_WEB_ROOT).'/';
 
 include_once($_DIR_ROOT.'/inc/config.php');
 
+$GP = new GlobalPath($_DIR_ROOT, $_WEB_ROOT);
 ?>
