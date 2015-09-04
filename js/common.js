@@ -106,26 +106,27 @@ $(document).ready(function()
 		}
 	}
 	var W_1280 = 1280;
-	var W_998 = 998;
+	var W_992 = 992;
 	var W_640 = 640;
 	var W_320 = 320;
 
 	function setPosition()
 	{
 		var w = $win.width();
+		console.log(w);
 		if(w >= W_1280)
 		{
 			visible(true, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(false, [$btn_book]);
 			isMobile = false;
 		}
-		else if(w < W_1280 && w >= W_998)
+		else if(w < W_1280 && w >= W_992)
 		{
 			visible(true, [$menu_box, $select_lang, $foot_menu_box]);
 			visible(false, [$btn_book, $('.extra-text')]);
 			isMobile = false;
 		}
-		else if(w < W_998 && w >= W_640)
+		else if(w < W_992 && w >= W_640)
 		{
 			visible(false, [$menu_box, $select_lang, $foot_menu_box, $('.extra-text')]);
 			visible(true, [$btn_book]);

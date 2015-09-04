@@ -56,9 +56,12 @@
 	}
 	.notice .content-head img{
 		margin-right: 18px;
+		width: 100%;
+		max-width: 353px;
 	}
 	.notice .content-head .h3-box{
 		width: 640px;
+		margin-top: 20px;
 	}
 	.notice .content-head h3{
 		font-size: 32px;
@@ -167,5 +170,11 @@
 		margin: 30px 0 15px 435px;
 		width: 50px;height: 2px;
 		background: #585858;
+	}
+}
+@media(min-width: 992px){
+	.notice .content-head .h3-box{
+		width: auto;
+		margin-top: 0px;
 	}
 }

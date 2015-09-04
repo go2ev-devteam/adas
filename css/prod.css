@@ -65,19 +65,19 @@
 		margin-top: 16px;
 		font-size: 16px;color: #3f3f3f;
 	}
-	.sm100 .feats img{
-		float: left;
-	}
-	.sm100 .content-row.first-child img{
-		float: left;
+	.sm100 .content-row.first-row img{
+		float: none;
 		display: block;
-		margin: 124px 30px 0 0;
+		width: 100%;
+		max-width: 570px;
+		margin: 64px 0px 0 0;
 	}
-	.sm100 .content-row.first-child ul{
-		margin-top: 265px;margin-left: 604px;
+	.sm100 .content-row.first-row ul{
+		clear: left;
+		margin-top: 25px;margin-left: 0px;
 		color: #f00;
 	}
-	.sm100 .content-row.first-child li{
+	.sm100 .content-row.first-row li{
 		padding-left: 20px;
 		background: url(../img/main/ir_icon.png) no-repeat -250px -306px;
 		text-align: left;
@@ -86,12 +86,21 @@
 	.sm100 .feats{
 		margin-top: 170px;
 	}
-	.sm100 .feats div{
-		float: right;
-		padding: 155px 0 0 18px;
-		width: 500px;
-		text-align: left;
+	.sm100 .feats img{
+		float: none;
+		width: 100%;
+		max-width: 500px;
 	}
+	.sm100 .feats .row{
+		width: auto;
+	}
+	.sm100 .feats .row div{
+		float: none;
+		text-align: center;
+		width: auto;
+		padding: 55px 0 0 0px;
+	}
+	
 	.sm100 .content-row li h4{
 		font-size: 48px
 	}
@@ -103,7 +112,7 @@
 		display: block;
 		font-size: 16px;line-height: 1.4;
 	}
-	.sm100 .feats div.feat-comment{
+	.sm100 .feats .row .feat-comment{
 		clear: both;float: none;
 		padding: 0;
 		padding-top: 48px;
@@ -128,6 +137,8 @@
 	}
 	.sm100 .specs img{
 		margin-top: 104px;
+		width: 100%;
+		max-width: 1024px;
 	}
 	.sm100 .spec-comments span{
 		display: block;
@@ -162,5 +173,34 @@
 	.sm100 .spec-tables tr td:last-child{
 		text-align: left;
 		padding-left: 24px;
+	}
+}
+@media(min-width: 992px){
+	.sm100 .content-row.first-row img{
+		float: left;
+		display: block;
+		width: auto;
+		margin: 124px 30px 0 0;
+	}
+	.sm100 .content-row.first-row ul{
+		clear: none;
+		margin-top: 265px;margin-left: 604px;
+		color: #f00;
+	}
+	
+}
+@media(min-width: 1200px){
+	.sm100 .feats img{
+		float: left;
+	}
+	.sm100 .feats .row{
+		width: 1024px;
+		margin: 0 auto;
+	}
+	.sm100 .feats .row div{
+		float: right;
+		padding: 155px 0 0 18px;
+		width: 500px;
+		text-align: left;
 	}
 }

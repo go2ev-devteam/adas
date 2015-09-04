@@ -35,10 +35,14 @@
 	.intro.body{
 		padding-bottom: 130px;
 	}
-	
-	h2{
-		padding-top: 640px;
+	.content-head .gutter{
+		position: relative;
+		height: 100%;
 	}
+	.content-head .row{
+		position: absolute;
+		left: 10px;bottom: 20px;right: 10px;
+	}	
 	h2,
 	h2 span{
 		display: block;
@@ -70,7 +74,7 @@
 		margin-top: 68px;
 	}
 	.intro dl{
-		position: relative;
+		/*position: relative;*/
 		float: none;
 		width: 100%;
 		margin-top: 30px;
@@ -79,27 +83,31 @@
 		margin-top: 0;
 	}
 	.intro dl dt{
-		position: absolute;
-		top: 182px;
+		/*position: absolute;*/
+		/*top: 182px;*/
 	}
 	.intro dl dt,
 	.intro dl dd{
 		/*padding-right: 58px;*/
 		text-align: left;
 	}
-	.intro dt{
+	.intro dt span{
+		display: block;
+		margin-top: 26px;
 		font-size: 20px;
 	}
+	.intro dt img{
+		display: block;
+		width: 100%;
+		max-width: 303px;
+	}
 	.intro dd{
+		margin-top: 52px;
 		font-size: 15px;
 		line-height: 24px;
 	}
-	.intro dd img{
-		display: block;
-	}
-	.intro dd span{
-		display: block;
-		margin-top: 114px;
+	.intro dd{
+		
 	}
 	.intro .about-2{
 		margin-top: 98px;
@@ -229,25 +237,27 @@
 		overflow: hidden;
 	}
 	.adasone .func-row{
-		margin-right: -62px;
+		margin-right: 0px;
+		text-align: center;
 	}
 	.adasone .func dl{
-		float: left;
+		float: none;
 		position: relative;
-		margin-top: 88px;margin-right: 62px;
-		width: 480px;
-	}
-	.adasone .func dt{
-		position: absolute;top: 315px;
-		font-size: 41px;
-	}
-	.adasone .func dd img,
-	.adasone .func dd span{
-		display: block;
+		margin: 88px auto 0;
+		width: auto;
+		max-width: 480px;
 		text-align: left;
 	}
-	.adasone .func dd span{
-		margin-top: 78px;
+	.adasone .func dt span{
+		display: inline-block;
+		margin-top: 26px;
+		font-size: 41px;text-align: left;
+	}
+	.adasone .func dt img{
+		width: 100%;
+	}
+	.adasone .func dd{
+		margin-top: 10px;
 		font-size: 15px;
 	}
 	.adasone .feat{
@@ -276,7 +286,33 @@
 	.adasone.body{
 		padding-bottom: 145px;
 	}
-
+}
+@media(min-width: 640px){
+	.adasone .func dl{
+		max-width: 480px;
+	}
+	
+}
+@media(min-width: 992px){
+	
+}
+@media(min-width: 1024px){
+	.adasone .func{
+		margin-right: -20px;
+	}
+	.adasone .func dl{
+		float: left;
+		margin-right: 20px;
+	}	
+}
+@media(min-width: 1280px){
+	.adasone .func{
+		margin-right: -62px;
+	}
+	.adasone .func dl{
+		float: left;
+		margin-right: 62px;
+	}
 }
 /* Tech */
 .tech .content-head h3{
@@ -332,7 +368,7 @@
 	.tech .h3-comment{
 	}
 }
-@media(min-width:998px){
+@media(min-width:992px){
 	.tech .content-head h3{
 
 	}
@@ -427,7 +463,7 @@
 		margin: 20px auto 0;
 	}
 }
-@media(min-width:998px){
+@media(min-width:992px){
 	.contact .map{
 		margin: 80px auto 0;
 	}
